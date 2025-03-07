@@ -5,7 +5,7 @@ import { Products } from "@/scripts/constants";
 import { Solutions } from "@/scripts/constants";
 import { Footers } from "@/scripts/constants";
 import { Navs } from "@/scripts/constants";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import HNCLogo from "@/assets/HNCLogo.png";
 import Bg1 from "@/assets/GenericMachines.jpg";
