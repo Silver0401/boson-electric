@@ -7,11 +7,7 @@ import { Footers } from "@/scripts/constants";
 import { Navs } from "@/scripts/constants";
 import Image from "next/image";
 import Link from "next/link";
-import HNCLogo from "@/assets/HNCLogo.png";
 import BosonLogo from "@/assets/BosonLogo.png";
-// import Bg1 from "@/assets/GenericMachines.jpg";
-// import Bg2 from "@/assets/RedMachines.jpg";
-// import Bg3 from "@/assets/World.jpg";
 import Bg4 from "@/assets/Bg4.jpg";
 import Bg5 from "@/assets/Bg5.jpg";
 import Bg6 from "@/assets/Bg6.jpg";
@@ -24,6 +20,7 @@ export default function Home() {
     setInterval(() => {
       setSelectedBanner(selectedBanner === 3 ? 1 : selectedBanner + 1);
     }, 5000);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
