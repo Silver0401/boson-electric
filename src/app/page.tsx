@@ -8,9 +8,13 @@ import { Navs } from "@/scripts/constants";
 import Image from "next/image";
 import Link from "next/link";
 import HNCLogo from "@/assets/HNCLogo.png";
-import Bg1 from "@/assets/GenericMachines.jpg";
-import Bg2 from "@/assets/RedMachines.jpg";
-import Bg3 from "@/assets/World.jpg";
+import BosonLogo from "@/assets/BosonLogo.png";
+// import Bg1 from "@/assets/GenericMachines.jpg";
+// import Bg2 from "@/assets/RedMachines.jpg";
+// import Bg3 from "@/assets/World.jpg";
+import Bg4 from "@/assets/Bg4.jpg";
+import Bg5 from "@/assets/Bg5.jpg";
+import Bg6 from "@/assets/Bg6.jpg";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -25,11 +29,11 @@ export default function Home() {
   return (
     <div className={styles.HomeSection}>
       <div className={styles.Banner}>
-        <h1>{"BOSTON / SOLUCIONES PROFESIONALES"}</h1>
+        <h1>{"SOLUCIONES PROFESIONALES"}</h1>
         <h2>{"Servicios Nacionales a nuestros Clientes en México"}</h2>
         <div className={styles.bg}>
           <Image
-            src={selectedBanner === 1 ? Bg1 : selectedBanner === 2 ? Bg2 : Bg3}
+            src={selectedBanner === 1 ? Bg4 : selectedBanner === 2 ? Bg5 : Bg6}
             alt="bg"
           />
         </div>
@@ -64,7 +68,7 @@ export default function Home() {
       </div>
       <nav className={styles.Nav}>
         <div className={styles.logoContainer}>
-          <Image src={HNCLogo} alt="logo" />
+          <Image src={BosonLogo} alt="logo" />
         </div>
 
         {Object.entries(Navs).map((navItem) => {
