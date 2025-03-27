@@ -12,10 +12,21 @@ export declare global {
     | "Motor Spindle"
     | "Motor AC Servo"
     | "Accesorios"
-    | "Sensor";
+    | "Sensores";
+
+  interface productItemProps {
+    title: string;
+    mainImg: StaticImageData;
+    overview: string;
+    features: string;
+    parametersImg: string;
+    dimensionsImg: string;
+  }
 
   interface productProps {
     route: string;
+    itemsList: Array<productItemProps>;
+    description: string;
   }
 
   type productsIndexed = {
@@ -31,10 +42,10 @@ export declare global {
     | "Ventiladores y Bombas"
     | "Conversiones"
     | "Elevador"
-    | "Grúa"
+    | "Grua"
     | "Industria de Plásticos";
 
-  interface solutionProps {
+  interface solutionProps extends productProps {
     img: StaticImageData;
   }
 
@@ -59,12 +70,7 @@ export declare global {
 
   //  ---------------------------- Nav Types --------------------------------
 
-  type Navs =
-    | "Inicio"
-    | "Productos"
-    | "Soluciones"
-    | "Servicios"
-    | "Acerca de Boson";
+  type Navs = "Inicio" | "Productos" | "Soluciones" | "Acerca de Boson";
 
   interface NavsProps {
     route: string;

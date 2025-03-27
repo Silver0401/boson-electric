@@ -1,0 +1,107 @@
+.productDisplayContainer {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productDisplayContainer .leftContainer,
+.rightContainer {
+  flex: 1 1 500px;
+}
+.productDisplayContainer .leftContainer {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.productDisplayContainer .leftContainer .ProductImg {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.productDisplayContainer .leftContainer h1 {
+  position: absolute;
+  padding: 20px;
+  top: 40px;
+  text-align: center;
+}
+
+.productDisplayContainer .leftContainer button {
+  position: absolute;
+  bottom: 70px;
+}
+
+.productDisplayContainer .leftContainer .tip {
+  position: absolute;
+  bottom: 20px;
+  padding: 0px 30px;
+  text-align: center;
+}
+
+.productDisplayContainer .rightContainer {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: block;
+  overflow: scroll;
+  padding: 40px 0px;
+}
+
+.productDisplayContainer .rightContainer .overviewContainer,
+.featursContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.productDisplayContainer .rightContainer .overviewContainer h2 {
+  position: relative;
+  margin: 25px;
+}
+
+.productDisplayContainer .rightContainer .overviewContainer p {
+  position: relative;
+  margin: 25px;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.productDisplayContainer .rightContainer .featursContainer h2 {
+  position: relative;
+  margin: 25px;
+}
+
+.productDisplayContainer .rightContainer .featursContainer p {
+  position: relative;
+  margin: 25px;
+}
+
+.productDisplayContainer .rightContainer .featursContainer .textBox {
+  border-bottom: 1px solid grey;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productDisplayContainer .rightContainer .featursContainer .textBox #numb {
+  font-weight: bolder;
+  color: #4597b3;
+}
+
+@media (max-width: 800px) {
+  .productDisplayContainer {
+    height: auto;
+  }
+
+  .productDisplayContainer .leftContainer {
+    height: 70vh;
+  }
+}

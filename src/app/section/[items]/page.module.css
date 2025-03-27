@@ -1,0 +1,127 @@
+.Body {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.Body .ProductBox {
+  position: relative;
+  flex: 1 1 400px;
+  height: auto;
+  max-width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+  margin: 30px 10px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.Body .ProductBox:hover .TopSection h5 {
+  background-color: hsla(195, 44%, 49%, 1);
+  color: white;
+}
+
+.Body .ProductBox:hover .TopSection .ImgContainer {
+  transform: scale(0.9) translateX(-25px);
+}
+
+.Body .ProductBox .TopSection {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.Body .ProductBox .TopSection h5 {
+  position: relative;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-left: 15px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  color: black;
+  background-color: hsla(195, 44%, 49%, 0.3);
+  backdrop-filter: blur(2px);
+  transition: all 350ms;
+}
+
+.Body .ProductBox .TopSection .ImgContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  right: 20px;
+  transform: scale(0.8);
+  transition: transform 250ms;
+}
+
+.Body .ProductBox .TopSection p {
+  position: relative;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.Body .ProductBox .BottomSection {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: scroll;
+}
+
+.Body .ProductBox .BottomSection .listItem {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #4597b3;
+  transition: background-color 350ms;
+  cursor: pointer;
+}
+
+.Body .ProductBox .BottomSection .listItem:hover {
+  background-color: rgba(70, 153, 180, 0.6);
+}
+
+.Body .ProductBox .BottomSection .listItem p {
+  margin-left: 20px;
+  font-size: 0.8rem;
+}
+
+.Body .ProductBox .BottomSection .listItem svg {
+  margin-right: 20px;
+  width: 15px;
+  height: 15px;
+}
+
+@media (max-width: 500px) {
+  .Body .ProductBox .BottomSection {
+    height: auto;
+  }
+}

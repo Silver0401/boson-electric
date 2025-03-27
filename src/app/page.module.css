@@ -16,204 +16,39 @@ flex-direction: column;
 .HomeSection {
   position: relative;
   width: 100vw;
-  height: 100vh;
-}
-
-.HomeSection .Banner {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.HomeSection .Banner .logosContainer {
-  position: absolute;
-  margin: auto 0px;
-  right: 30px;
-  width: 40px;
   height: auto;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.HomeSection .Banner .logosContainer div {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-  display: grid;
-  place-items: center;
-  margin: 10px 0px;
-  opacity: 0.5;
-  transition: opacity 300ms;
-  cursor: pointer;
-}
-
-.HomeSection .Banner .logosContainer .instagram {
-  background-color: rgba(188, 7, 73, 0.7);
-}
-
-.HomeSection .Banner .logosContainer .facebook {
-  background-color: rgb(15, 46, 185, 0.7);
-}
-
-.HomeSection .Banner .logosContainer .whatsapp {
-  background-color: rgb(38, 219, 95, 0.7);
-}
-
-.HomeSection .Banner .logosContainer .linkedin {
-  background-color: rgb(27, 209, 234, 0.7);
-}
-
-.HomeSection .Banner .logosContainer .twitter {
-  background-color: rgb(21, 125, 228, 0.7);
-}
-
-.HomeSection .Banner .logosContainer div svg {
-  position: relative;
-  width: 65%;
-  height: 65%;
-  fill: white;
-}
-
-.HomeSection .Banner .logosContainer div:hover {
-  opacity: 1;
-}
-
-.HomeSection .Banner h1 {
-  margin-left: clamp(0px, 5vw, 50px);
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  z-index: 1;
-  color: #4597b3;
-  padding: 3px 15px;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
-  font-weight: bolder;
-}
-
-.HomeSection .Banner h2 {
-  margin-left: clamp(0px, 5vw, 50px);
-  font-size: 1.2rem;
-  font-weight: normal;
-  color: white;
-  z-index: 1;
-}
-
-.HomeSection .Banner .bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  display: grid;
-  place-items: center;
-  z-index: 0;
-}
-
-.HomeSection .Banner .bg::after {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: "";
-  z-index: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.HomeSection .Banner .bg img {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  background-size: cover;
-}
-
-.HomeSection .Nav {
-  position: relative;
-  width: min(100%, 950px);
-  height: 70px;
-  margin-left: 100px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-}
-
-.HomeSection .Nav .shoppingCart {
-  position: relative;
-  width: auto;
-  height: 25px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  cursor: pointer;
-}
-
-.HomeSection .Nav .shoppingCart svg {
-  width: 25px;
-  height: 25px;
-}
-
-.HomeSection .Nav .shoppingCart p {
-  font-size: 0.8rem;
-  font-weight: bold;
-  margin-left: 5px;
-}
-
-.HomeSection .Nav .NavItem {
-  position: relative;
-  height: 70%;
-  display: grid;
-  place-items: center;
-  border-bottom: 2px solid #4597b3;
-  font-weight: bolder;
-  font-size: 0.8rem;
-}
-
-.HomeSection .Nav .logoContainer {
-  position: relative;
-  overflow: hidden;
-  width: 150px;
-  height: 80%;
-  display: grid;
-  place-items: center;
-}
-
-.HomeSection .Nav .logoContainer img {
-  position: relative;
-  height: 100%;
-  width: 100%;
 }
 
 .HomeSection .BodySection {
   position: relative;
   width: 100%;
-  height: 700px;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   background-color: #f7f6f8;
+  flex-wrap: wrap-reverse;
+}
+
+.HomeSection .ProductsCenter {
+  flex: 1 1 100px;
+}
+
+.HomeSection .SolutionsCenter {
+  flex: 1 1 700px;
 }
 
 .HomeSection .ProductsCenter {
   position: relative;
   width: 25%;
-  height: 90%;
+  height: 700px;
 }
 
 .HomeSection .ProductsCenter h3 {
   position: relative;
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .HomeSection .ProductsCenter .Box {
@@ -226,16 +61,28 @@ flex-direction: column;
   align-items: center;
   border: 1px solid rgba(174, 174, 174, 0.4);
   margin: 13px auto;
-  padding: 0px 10px;
+  background-color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  border-radius: 5px;
+}
+
+.HomeSection .ProductsCenter .Box .ProductLink {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
 }
 
 .HomeSection .ProductsCenter .Box:hover svg {
-  transform: translateX(5px);
+  transform: translateX(9px);
 }
 
 .HomeSection .ProductsCenter .Box svg {
-  position: relative;
+  position: absolute;
+  right: 20px;
   width: 20px;
   height: 20px;
   color: #4597b3;
@@ -245,7 +92,7 @@ flex-direction: column;
 .HomeSection .SolutionsCenter {
   position: relative;
   width: 65%;
-  height: 90%;
+  height: 630px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -268,6 +115,7 @@ flex-direction: column;
   place-items: center;
   overflow: hidden;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .HomeSection .SolutionsCenter .Box:hover p {
@@ -295,11 +143,14 @@ flex-direction: column;
 
 .HomeSection .SolutionsCenter .DownloadsContainer {
   position: relative;
-  width: 100%;
-  height: 100px;
+  width: 90%;
+  height: auto;
+  padding: 20px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px 0px;
   align-items: center;
   border-radius: 10px;
   background-color: #eae8e8;
@@ -312,6 +163,7 @@ flex-direction: column;
 }
 
 .HomeSection .SolutionsCenter .DownloadsContainer span {
+  flex: 1 1 100px;
   position: relative;
   display: flex;
   flex-direction: column-reverse;
@@ -319,6 +171,7 @@ flex-direction: column;
   height: 60%;
   align-items: center;
   cursor: pointer;
+  margin: 10px;
 }
 
 .HomeSection .SolutionsCenter .DownloadsContainer span:hover svg {
@@ -332,11 +185,11 @@ flex-direction: column;
 }
 
 .HomeSection .SolutionsCenter .DownloadsContainer span p {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   padding: 0px 10px;
 }
 
-.HomeSection .FooterSection {
+.FooterSection {
   position: relative;
   width: 100%;
   height: 350px;
@@ -346,7 +199,7 @@ flex-direction: column;
   align-items: center;
 }
 
-.HomeSection .FooterSection .column {
+.FooterSection .column {
   position: relative;
   height: 100%;
   width: 20%;
@@ -357,16 +210,26 @@ flex-direction: column;
   padding-top: 30px;
 }
 
-.HomeSection .FooterSection .column a {
+.FooterSection .column a {
   position: relative;
   margin: 5px 0px;
   font-size: 0.8rem;
   margin-left: 15px;
 }
 
-.HomeSection .FooterSection .column h4 {
+.FooterSection .column h4 {
   margin-left: 15px;
   position: relative;
   margin-bottom: 10px;
   font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .HomeSection .SolutionsCenter {
+    height: auto;
+    padding-top: 80px;
+  }
+  .HomeSection .SolutionsCenter h2 {
+    margin: 20px;
+  }
 }
