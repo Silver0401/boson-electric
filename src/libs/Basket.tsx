@@ -40,7 +40,7 @@ const Basket: React.FC = () => {
             </svg>
             <button
               onClick={() => {
-                router.push("/products");
+                router.push("/section/products");
                 setBasketState("Closed");
               }}
             >
