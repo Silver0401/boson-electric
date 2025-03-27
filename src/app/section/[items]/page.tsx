@@ -1,6 +1,5 @@
 import { Products, Solutions } from "@/scripts/constants";
 import styles from "./page.module.css";
-import Image from "next/image";
 import ProductCard from "@/libs/ProductCard";
 // import { useRouter } from "next/navigation";
 

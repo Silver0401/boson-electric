@@ -1,9 +1,8 @@
 "use client";
 
 import { GlobalContext } from "@/e2e/globalContext";
-import React, { useContext, useEffect, useMemo } from "react";
+import React, { useContext, useMemo } from "react";
 import { useRouter } from "next/navigation";
-import { Products } from "@/scripts/constants";
 import Image from "next/image";
 
 const Basket: React.FC = () => {
@@ -62,7 +61,7 @@ const Basket: React.FC = () => {
             ) {
             } else {
               return (
-                <div className="basketItem">
+                <div className="basketItem" key={`${item.title}${index}`}>
                   <p className="coso">{item.title}</p>
                   <div className="cont">
                     <div className="imgContainer">
