@@ -103,7 +103,7 @@ import Plastic1 from "@/assets/Solutions/Plastic1.jpg";
 
 export const Products: productsIndexed = {
   PLC: {
-    route: "/products/",
+    route: "/section/products",
     description:
       "HC series programmable logic controllers with high reliability, high performance and high speed features have been applied in many",
     itemsList: [
@@ -466,7 +466,7 @@ The unique synchronous pulse output instruction can easily realize accurate sync
     ],
   },
   HMI: {
-    route: "/products/",
+    route: "/section/products",
     description:
       "HNC Electric provides various Human Machine Interface (HMI), including touch screen and text panel with different size and",
     itemsList: [
@@ -689,7 +689,7 @@ HT3000-D15
     ],
   },
   "Controlador CNC": {
-    route: "/products/",
+    route: "/section/products",
     description:
       "HNC CNC controllers adopt advanced open architecture, built-in Industrial Personal Computer (IPC). They integrates various interfaces for",
     itemsList: [
@@ -857,7 +857,7 @@ This is a two-coordinate linkage, open loop cnc system, representing very common
     ],
   },
   "Servo Drive": {
-    route: "/products/",
+    route: "/section/products",
     description:
       "HSD series servo drives can meet general requirements of machine buildings, automation controls with AC220V and AC380V power supply",
     itemsList: [
@@ -1075,7 +1075,7 @@ Positioning： CNC spindle positioning, internal digital positioning.
     ],
   },
   "Invertidor de Frecuencia": {
-    route: "/products/",
+    route: "/section/products",
     description:
       "HNC Electric designs complete products range of AC frequency inverters with high stability and high performance. Various Special types",
     itemsList: [
@@ -1450,7 +1450,7 @@ LCD display a variety of operating parameters, programming and fault state with 
     ],
   },
   "Motor Spindle": {
-    route: "/products/",
+    route: "/section/products",
     description:
       "HSM series servo motors provide AC220V / 380V products. Selection of high temperature resistance, high-energy product quality permanent",
     itemsList: [
@@ -1502,7 +1502,7 @@ GM7 series of AC servo spindle motors consist of stator, rotor, low-noise fans, 
     ],
   },
   "Motor AC Servo": {
-    route: "/products/",
+    route: "/section/products",
     description:
       "HNC Electric offers full range of accessories of automation & drive products, e.g. reducers, braking unit, reactors, transformer, etc.",
     itemsList: [
@@ -1553,7 +1553,7 @@ HSM series servo motors have four series of dimensions, 60mm、80mm、110mm、13
     ],
   },
   Accesorios: {
-    route: "/products/",
+    route: "/section/products",
     description:
       "HC series programmable logic controllers with high reliability, high performance and high speed features have been applied in many",
     itemsList: [
@@ -1620,7 +1620,7 @@ Using advanced CNC machine manufacturing process as well as heat treatment the p
     ],
   },
   Sensores: {
-    route: "/products/",
+    route: "/section/products",
     description:
       "The new HNC sensor is finally here!Good quality / Great EMC features / Long-life Design / High precisionAdhering to the principle of",
     itemsList: [
@@ -1742,7 +1742,7 @@ Do not use this area sensor for dangerous machines, as it is not a kind of safef
 export const Solutions: solutionsIndexed = {
   "Empaques e Impresiones": {
     img: packages,
-    route: "/products",
+    route: "/section/solutions",
     description:
       "Lighting up your life with HNC automation and drive technology!",
     itemsList: [
@@ -2078,7 +2078,7 @@ Customer Benefit
   },
   "Maquina de Herramientas CNC": {
     img: tool,
-    route: "/products",
+    route: "/section/solutions",
     description:
       "Lighting up your life with HNC automation and drive technology!",
     itemsList: [
@@ -2152,7 +2152,7 @@ Customer Benefit
   },
   Textiles: {
     img: textile,
-    route: "/products",
+    route: "/section/solutions",
     description: "The cradle of beauty.",
     itemsList: [
       {
@@ -2514,7 +2514,7 @@ Customer Benefit
   },
   "Ventiladores y Bombas": {
     img: fan,
-    route: "/products",
+    route: "/section/solutions",
     description: "Save the energy save the world!",
     itemsList: [
       {
@@ -2653,7 +2653,7 @@ Customer Benefit
   },
   Conversiones: {
     img: slicing,
-    route: "/products",
+    route: "/section/solutions",
     description: "Save the energy save the world!",
     itemsList: [
       {
@@ -2951,7 +2951,7 @@ Customer Benefit
   },
   Elevador: {
     img: stairs,
-    route: "/products",
+    route: "/section/solutions",
     description: "Lifting day by day!",
     itemsList: [
       {
@@ -3036,7 +3036,7 @@ Customer Benefit
   },
   Grua: {
     img: crane,
-    route: "/products",
+    route: "/section/solutions",
     description: "Pick up everything you can!",
     itemsList: [
       {
@@ -3095,7 +3095,7 @@ Customer Benefit
   },
   "Industria de Plásticos": {
     img: plastic,
-    route: "/products",
+    route: "/section/solutions",
     description: "Synthesize everything you want",
     itemsList: [
       {

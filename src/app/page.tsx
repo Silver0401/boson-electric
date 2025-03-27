@@ -5,10 +5,12 @@ import { Products } from "@/scripts/constants";
 import { Solutions } from "@/scripts/constants";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 import { useEffect, useState } from "react";
 
 export default function Home() {
+  const router = useRouter();
   const [selectedBanner, setSelectedBanner] = useState<number>(1);
 
   useEffect(() => {
@@ -54,7 +56,11 @@ export default function Home() {
             const [key, value] = solution;
 
             return (
-              <div key={key} className={styles.Box}>
+              <div
+                key={key}
+                className={styles.Box}
+                onClick={() => router.push(value.route)}
+              >
                 <p>{key}</p>
                 <Image src={value.img} alt={`${key}`} />
               </div>
