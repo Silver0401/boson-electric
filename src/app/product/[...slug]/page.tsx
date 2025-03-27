@@ -2,7 +2,6 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { ProdsAndSols } from "@/scripts/constants";
 import AddToCart from "@/libs/AddToCart";
-import { sendError } from "next/dist/server/api-utils";
 
 export default async function Page({
   params,
