@@ -21,7 +21,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, route, data }) => {
           <Image src={data.itemsList[0].mainImg} alt={data.route} />
         </div>
         <h5>{title}</h5>
-        <p>{data.description}</p>
+        <p>{`${data.description.substring(0, 50)}...`}</p>
       </div>
       <div className={styles.BottomSection}>
         {data.itemsList.map((item) => {
