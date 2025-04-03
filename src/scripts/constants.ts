@@ -59,7 +59,6 @@ import Sensor4 from "@/assets/Products/Sensor4.jpg";
 import print1 from "@/assets/Solutions/print1.jpg";
 import print2 from "@/assets/Solutions/print2.jpg";
 import print3 from "@/assets/Solutions/print3.jpg";
-import print4 from "@/assets/Solutions/print4.jpg";
 import print5 from "@/assets/Solutions/print5.jpg";
 import print6 from "@/assets/Solutions/print6.jpg";
 import print7 from "@/assets/Solutions/print7.jpg";

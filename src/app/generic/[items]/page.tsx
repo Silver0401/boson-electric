@@ -21,7 +21,7 @@ export default async function GenericsPage({
 
       <div className={styles.GenericsContainer}>
         {GenericPageData.itemsList.map((item) => {
-          return <GenericCard data={item} title={section} />;
+          return <GenericCard key={item.title} data={item} title={section} />;
         })}
       </div>
     </div>

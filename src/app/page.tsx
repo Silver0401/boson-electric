@@ -27,7 +27,7 @@ export default function Home() {
           <h3>{"Centro de Productos"}</h3>
 
           {Object.entries(Products).map((product) => {
-            const [key, value] = product;
+            const [key, _value] = product;
 
             return (
               <div key={key} className={styles.Box}>
