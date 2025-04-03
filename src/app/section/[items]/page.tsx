@@ -1,7 +1,6 @@
 import { Products, Solutions } from "@/scripts/constants";
 import styles from "./page.module.css";
 import ProductCard from "@/libs/ProductCard";
-// import { useRouter } from "next/navigation";
 
 export default async function ItemsPage({
   params,
@@ -16,7 +15,20 @@ export default async function ItemsPage({
         (entry) => {
           const [key, value] = entry;
 
-          return <ProductCard key={key} title={key} data={value} />;
+          return (
+            <ProductCard
+              key={key}
+              title={
+                key.includes("Maquina")
+                  ? "Máquina de Herramientas CNC"
+                  : key.includes("Grua")
+                  ? "Grúa"
+                  : key
+              }
+              route={key}
+              data={value}
+            />
+          );
         }
       )}
     </div>

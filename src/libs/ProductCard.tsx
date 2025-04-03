@@ -8,9 +8,10 @@ import { useRouter } from "next/navigation";
 interface ProductCardProps {
   title: string;
   data: productProps;
+  route: string;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ title, data }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ title, route, data }) => {
   const router = useRouter();
 
   return (
@@ -29,7 +30,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ title, data }) => {
               key={item.title}
               className={styles.listItem}
               onClick={() => {
-                router.push(`/product/${title}/${item.title}`);
+                router.push(`/product/${route}/${item.title}`);
               }}
             >
               <p>{item.title}</p>

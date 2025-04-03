@@ -1,0 +1,33 @@
+.Body {
+  height: auto;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.Body h3 {
+  padding: 20px 30px;
+  height: auto;
+  width: 100vw;
+  text-align: start;
+  text-decoration: underline 3px solid #4597b3;
+}
+
+.Body h4 {
+  padding-left: 40px;
+  padding-top: 15px;
+  height: auto;
+  width: 100vw;
+  text-align: start;
+}
+
+.Body p {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: auto;
+  width: 100vw;
+  text-align: start;
+  line-height: 30px;
+  text-align: justify;
+}

@@ -8,7 +8,7 @@ export declare global {
     | "HMI"
     | "Controlador CNC"
     | "Servo Drive"
-    | "Invertidor de Frecuencia"
+    | "Variador de Frecuencia"
     | "Motor Spindle"
     | "Motor AC Servo"
     | "Accesorios"
@@ -33,6 +33,10 @@ export declare global {
     [key in products]: productProps;
   };
 
+  //  ---------------------------- Services Types --------------------------------
+
+  type services = "Descargar" | "FaQ" | "Garantías";
+
   //  ---------------------------- Solutions Types --------------------------------
 
   type solutions =
@@ -43,7 +47,7 @@ export declare global {
     | "Conversiones"
     | "Elevador"
     | "Grua"
-    | "Industria de Plásticos";
+    | "Industria de Plasticos";
 
   interface solutionProps extends productProps {
     img: StaticImageData;
@@ -55,12 +59,16 @@ export declare global {
 
   //  ---------------------------- Footer Types --------------------------------
 
-  type footers = "Acerca de Boson" | "Productos" | "Soluciones" | "Servicios";
+  type abouts = "Descripcion de la Empresa" | "Vision y Mision";
+
+  //  ---------------------------- Footer Types --------------------------------
+
+  type footers = "Acerca" | "Productos" | "Soluciones" | "Servicios";
 
   interface footersProps {
     list: Array<{
-      name: string;
-      route: string;
+      name: solutions | products | services | abouts;
+      route?: string;
     }>;
   }
 

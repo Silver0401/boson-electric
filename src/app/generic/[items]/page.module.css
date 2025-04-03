@@ -1,0 +1,63 @@
+.Body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.Body h1 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 30px;
+  padding: 40px;
+}
+
+.Body .des {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.Body .GenericsContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Body .GenericsContainer .GenericBox {
+  position: relative;
+  flex: 1 1 300px;
+  max-width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+  margin: 20px;
+  transition: background-color 350ms;
+  cursor: pointer;
+}
+
+.Body .GenericsContainer .GenericBox:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.Body .GenericsContainer .GenericBox h4 {
+  color: black;
+  text-align: center;
+}
+
+.Body .GenericsContainer .GenericBox img {
+  width: 100%;
+  height: auto;
+}

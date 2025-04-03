@@ -31,7 +31,7 @@ export default function Home() {
 
             return (
               <div key={key} className={styles.Box}>
-                <Link className={styles.ProductLink} href={value.route}>
+                <Link className={styles.ProductLink} href={`/generic/${key}`}>
                   {key}
                 </Link>
                 <svg
@@ -59,7 +59,7 @@ export default function Home() {
               <div
                 key={key}
                 className={styles.Box}
-                onClick={() => router.push(value.route)}
+                onClick={() => router.push(`/generic/${key}`)}
               >
                 <p>{key}</p>
                 <Image src={value.img} alt={`${key}`} />

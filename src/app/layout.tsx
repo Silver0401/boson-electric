@@ -43,7 +43,12 @@ export default function RootLayout({
                   <h4>{key}</h4>
                   {value.list.map((value) => {
                     return (
-                      <Link key={`${key} ${value.name}`} href={value.route}>
+                      <Link
+                        key={`${key} ${value.name}`}
+                        href={
+                          value.route ? value.route : `/generic/${value.name}`
+                        }
+                      >
                         <p>{value.name}</p>
                       </Link>
                     );

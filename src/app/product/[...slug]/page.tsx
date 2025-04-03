@@ -10,8 +10,6 @@ export default async function Page({
 }) {
   const { slug } = await params;
 
-  console.log(slug);
-
   const filteredSlugSection = slug[0].replace(/%20/g, " ") as
     | products
     | solutions;

@@ -63,6 +63,7 @@ import print4 from "@/assets/Solutions/print4.jpg";
 import print5 from "@/assets/Solutions/print5.jpg";
 import print6 from "@/assets/Solutions/print6.jpg";
 import print7 from "@/assets/Solutions/print7.jpg";
+import print75 from "@/assets/Solutions/print7.5.jpg";
 import print8 from "@/assets/Solutions/print8.jpg";
 import print9 from "@/assets/Solutions/print9.jpg";
 import print10 from "@/assets/Solutions/print10.jpg";
@@ -105,7 +106,7 @@ export const Products: productsIndexed = {
   PLC: {
     route: "/section/products",
     description:
-      "HC series programmable logic controllers with high reliability, high performance and high speed features have been applied in many",
+      "HC series programmable logic controllers with high reliability, high performance and high speed features have been applied in many industries all over the world. HNC Electric works closely with customers to design products that are the best choice for their applications. Easy-operation, fast and reliable, HC series PLCs process your applications more effectively and accurately.",
     itemsList: [
       {
         title: "HCS Series Card type PLC",
@@ -468,7 +469,7 @@ The unique synchronous pulse output instruction can easily realize accurate sync
   HMI: {
     route: "/section/products",
     description:
-      "HNC Electric provides various Human Machine Interface (HMI), including touch screen and text panel with different size and",
+      "HNC Electric provides various Human Machine Interface (HMI), including touch screen and text panel with different size and resolution. The new HT3000 series HMI can support all brands of PLCs with internal protocol. It also offers fast and convenient control functions for industrial automation machines. In addition, our RTOS-based and user-friendly Soft Screen Editor and Programming Software configures the whole series. Users can quickly edit images and graphs and easily set suitable communication protocol. More applications can be created, edited, downloaded and uploaded.",
     itemsList: [
       {
         title: "H-BOX Series IoT Box",
@@ -691,7 +692,7 @@ HT3000-D15
   "Controlador CNC": {
     route: "/section/products",
     description:
-      "HNC CNC controllers adopt advanced open architecture, built-in Industrial Personal Computer (IPC). They integrates various interfaces for",
+      "HNC CNC controllers adopt advanced open architecture, built-in Industrial Personal Computer (IPC). They integrates various interfaces for feed shaft, spindle, hand-held units, and built-in PLC, adopts high-capacity disk storage, and provides the function for USB, DNC and Ethernet program extension and exchange.",
     itemsList: [
       {
         title: "HNC-808 series",
@@ -859,7 +860,7 @@ This is a two-coordinate linkage, open loop cnc system, representing very common
   "Servo Drive": {
     route: "/section/products",
     description:
-      "HSD series servo drives can meet general requirements of machine buildings, automation controls with AC220V and AC380V power supply",
+      "HSD series servo drives can meet general requirements of machine buildings, automation controls with AC220V and AC380V power supply and 0.2 ~ 132kW power rating. They satisfy customers with high performance and cost effective features. Customized solutions according to different industries and applications can be supported by HNC Electric which could offer additional customer benefit in the field of industrial automation.",
     itemsList: [
       {
         title: "SV-E3 Series Synchronous Servo System",
@@ -1074,10 +1075,10 @@ Positioning： CNC spindle positioning, internal digital positioning.
       },
     ],
   },
-  "Invertidor de Frecuencia": {
+  "Variador de Frecuencia": {
     route: "/section/products",
     description:
-      "HNC Electric designs complete products range of AC frequency inverters with high stability and high performance. Various Special types",
+      "HNC Electric designs complete products range of AC frequency inverters with high stability and high performance. Various Special types for different applications are also available as well as standard inverters, e.g. winder, CNC machine tools, crane, injection molding machine, etc.",
     itemsList: [
       {
         title: "HV320 Series Frequency Inverter",
@@ -1504,7 +1505,7 @@ GM7 series of AC servo spindle motors consist of stator, rotor, low-noise fans, 
   "Motor AC Servo": {
     route: "/section/products",
     description:
-      "HNC Electric offers full range of accessories of automation & drive products, e.g. reducers, braking unit, reactors, transformer, etc.",
+      "HSM series servo motors provide AC220V / 380V products. Selection of high temperature resistance, high-energy product quality permanent magnetic material，optimal design of the electromagnetic parameters, can maintain the motor a good working condition and fast response on long-running. Customized support is also available, e.g. dimensions, electrical data.",
     itemsList: [
       {
         title: "HSM (AC380V) Series Servo Motor",
@@ -1555,7 +1556,7 @@ HSM series servo motors have four series of dimensions, 60mm、80mm、110mm、13
   Accesorios: {
     route: "/section/products",
     description:
-      "HC series programmable logic controllers with high reliability, high performance and high speed features have been applied in many",
+      "HNC Electric offers full range of accessories of automation & drive products, e.g. reducers, braking unit, reactors, transformer, etc.",
     itemsList: [
       {
         title: "HNC Braking Unit",
@@ -1621,8 +1622,13 @@ Using advanced CNC machine manufacturing process as well as heat treatment the p
   },
   Sensores: {
     route: "/section/products",
-    description:
-      "The new HNC sensor is finally here!Good quality / Great EMC features / Long-life Design / High precisionAdhering to the principle of",
+    description: `
+      The new HNC sensor is finally here!
+      Good quality / Great EMC features / Long-life Design / High precision
+      Adhering to the principle of customer first, we formally release HNC sensor products from the perspective of customer needs.
+      Please allow me to introduce HNC's new product series, HNC SENSOR.
+      Rotary encoder，Proximity sensor, Photoelectric Sensors, Area sensor.......
+      `,
     itemsList: [
       {
         title: "Rotary Encoder",
@@ -1833,34 +1839,6 @@ Customer Benefit
         features: `NA`,
       },
       {
-        title: "HNC VFDs and Servo Used in Filling Machine",
-        mainImg: print4,
-        dimensionsImg: "",
-        parametersImg: "",
-        overview: `
-Application Description
-– The filling machine sets the timing for the entire plant
-– It determines the velocity setpoint for all upstream and downstream machines
-– The further apart the machines are from the filling machine, the faster they must run in order to maintain the buffer at its optimum level (increase/decrease buffer quantity)
- 
-Technology Requirement
-– 2~4 servo axis per machine or 1 big motor drive with gearbox
-– Synchronous operation and position control for filling
-– Power: 12000~40000 bottles/ hr
- 
-System Diagram
-– HV100 / HV480 / HV610 / HSD2 / SV-E3 / HSD7
- 
-Customer Benefit
-– Closed-loop servo control integrated in the drive
-– Dynamic response for acceleration/ emergency stop
-– Angular synchronous operation with external encoder
-– Servo filling technology in high end machine(every filler has one servo motor)
- 
-          `,
-        features: `NA`,
-      },
-      {
         title: "HNC Solution for Horizontal Tubular bag Machine",
         mainImg: print5,
         dimensionsImg: "",
@@ -1941,6 +1919,34 @@ Customer Benefit
 – Dynamic response for acceleration
 – Different power range requirement for X/Y/Z axis
 – Synchronous operation for X axis if double drive structure
+          `,
+        features: `NA`,
+      },
+      {
+        title: "HNC Products for Vertical Tubular bag Machine",
+        mainImg: print75,
+        dimensionsImg: "",
+        parametersImg: "",
+        overview: `
+Application Description
+– Tubular bag machines package bulk solids, such as candy, potato chips, pasta, chocolate etc., but also fluid products in bags for sale
+– Bag sizes vary from a few cubic centimeters up to several liters
+– The cycle time depends on the size of the package and its contents
+– Depending on the actual application, up to 200 bags per minute can be achieved
+ 
+Technology Requirement
+– 60~200bags/min
+– ±1% tension control tolerance
+– Discontinuous or continuous
+ 
+System Diagram
+– HV100 / HV480 / HV610 / HSD2 / SV-E3 / HSD7
+ 
+Customer Benefit
+– Closed-loop tension control integrated in the drive
+– Dynamic response to make sure the tension changed
+– Winder and unwinder function implemented by drive
+– Sealer needs servo control to synchronous with the foil
           `,
         features: `NA`,
       },
@@ -3093,7 +3099,7 @@ Customer Benefit
       },
     ],
   },
-  "Industria de Plásticos": {
+  "Industria de Plasticos": {
     img: plastic,
     route: "/section/solutions",
     description: "Synthesize everything you want",
@@ -3157,42 +3163,37 @@ Customer Benefit
 export const ProdsAndSols = { ...Products, ...Solutions };
 
 export const Footers: footersIndexed = {
-  "Acerca de Boson": {
+  Acerca: {
     list: [
-      { name: "Descripción de la Empresa", route: "" },
-      { name: "Visión y Misión", route: "" },
-      { name: "Historia de Crecimiento", route: "" },
+      { name: "Descripcion de la Empresa", route: "/about" },
+      { name: "Vision y Mision", route: "/about" },
     ],
   },
   Productos: {
     list: [
-      { name: "Controlador CNC", route: "" },
-      { name: "Servo Drive", route: "" },
-      { name: "Invertidor de Frecuencia", route: "" },
-      { name: "Motor Spindle", route: "" },
-      { name: "Motor AC Servo", route: "" },
-      { name: "Accesorios", route: "" },
-      { name: "Sensor", route: "" },
+      { name: "Controlador CNC" },
+      { name: "Servo Drive" },
+      { name: "Variador de Frecuencia" },
+      { name: "Motor Spindle" },
+      { name: "Motor AC Servo" },
+      { name: "Accesorios" },
+      { name: "Sensores" },
     ],
   },
   Soluciones: {
     list: [
-      { name: "Empaques e Impresiones", route: "" },
-      { name: "Maquina de Herramientas CNC", route: "" },
-      { name: "Textiles", route: "" },
-      { name: "Ventiladores y Bombas", route: "" },
-      { name: "Conversiones", route: "" },
-      { name: "Elevador", route: "" },
-      { name: "Grúa", route: "" },
-      { name: "Industria de Plásticos", route: "" },
+      { name: "Empaques e Impresiones" },
+      { name: "Maquina de Herramientas CNC" },
+      { name: "Textiles" },
+      { name: "Ventiladores y Bombas" },
+      { name: "Conversiones" },
+      { name: "Elevador" },
+      { name: "Grua" },
+      { name: "Industria de Plasticos" },
     ],
   },
   Servicios: {
-    list: [
-      { name: "Descargar", route: "" },
-      { name: "FaQ", route: "" },
-      { name: "Garantías", route: "" },
-    ],
+    list: [{ name: "FaQ", route: "/faq" }],
   },
 };
 

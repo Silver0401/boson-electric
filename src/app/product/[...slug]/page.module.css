@@ -20,14 +20,14 @@
 
 .productDisplayContainer .leftContainer .ProductImg {
   position: relative;
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
 .productDisplayContainer .leftContainer h1 {
   position: absolute;
-  padding: 20px;
-  top: 40px;
+  padding: 15px 40px;
+  top: 20px;
   text-align: center;
 }
 
@@ -99,6 +99,10 @@
 @media (max-width: 800px) {
   .productDisplayContainer {
     height: auto;
+  }
+
+  .productDisplayContainer .leftContainer h1 {
+    top: 0px;
   }
 
   .productDisplayContainer .leftContainer {
