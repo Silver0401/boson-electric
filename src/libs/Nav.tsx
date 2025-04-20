@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useContext } from "react";
-import Bg4 from "@/assets/Bg4.jpg";
 import Image from "next/image";
 import BosonLogo from "@/assets/BosonLogo.png";
 import { Navs } from "@/scripts/constants";
