@@ -7,11 +7,13 @@
 
 .Body h1 {
   position: relative;
-  width: 100%;
-  height: auto;
   text-align: center;
-  margin-top: 30px;
-  padding: 40px;
+  margin: 40px 0px;
+  display: grid;
+  padding: 10px;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
 .Body .des {
@@ -19,7 +21,11 @@
   width: 100%;
   height: auto;
   text-align: center;
-  padding-bottom: 80px;
+  padding: 0px 30px;
+  padding-bottom: 25px;
+  text-align: justify;
+  display: grid;
+  place-items: center;
 }
 
 .Body .GenericsContainer {
@@ -38,8 +44,9 @@
   max-width: 250px;
   height: 250px;
   border-radius: 10px;
-  border: 2px solid black;
   display: flex;
+  box-shadow: 2px 2px 4px grey;
+  border: 2px solid #4597b3;
   flex-direction: column;
   justify-content: space-evenly;
   overflow: hidden;
@@ -49,12 +56,35 @@
 }
 
 .Body .GenericsContainer .GenericBox:hover {
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .Body .GenericsContainer .GenericBox h4 {
-  color: black;
+  color: white;
+  font-size: 0.8rem;
   text-align: center;
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 0px 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.Body .GenericsContainer .GenericBox .arrowContainer {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  right: 30px;
+  bottom: 20px;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+.Body .GenericsContainer .GenericBox .arrowContainer svg {
+  width: 60%;
+  height: 60%;
+  fill: #66cdd3;
 }
 
 .Body .GenericsContainer .GenericBox img {

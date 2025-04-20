@@ -27,6 +27,7 @@ export declare global {
     route: string;
     itemsList: Array<productItemProps>;
     description: string;
+    icon?: React.ReactElement;
   }
 
   type productsIndexed = {
@@ -78,7 +79,7 @@ export declare global {
 
   //  ---------------------------- Nav Types --------------------------------
 
-  type Navs = "Inicio" | "Productos" | "Soluciones" | "Acerca de Boson";
+  type Navs = "Productos" | "Soluciones" | "Acerca de Boson";
 
   interface NavsProps {
     route: string;

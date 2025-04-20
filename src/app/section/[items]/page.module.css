@@ -1,3 +1,12 @@
+.title {
+  margin-top: 30px;
+  display: grid;
+  padding: 10px;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
 .Body {
   height: auto;
   width: 100vw;

@@ -1,18 +1,3 @@
-/* 
-
-width: 100%
-height: 100%
-
-*/
-/* 
-
-display: flex;
-justify-content: center;
-align-items:center;
-flex-direction: column;
-
-*/
-
 .HomeSection {
   position: relative;
   width: 100vw;
@@ -23,12 +8,162 @@ flex-direction: column;
   position: relative;
   width: 100%;
   height: auto;
+}
+
+.HomeSection .InitContainer {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 70px);
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  background-color: #f7f6f8;
-  flex-wrap: wrap-reverse;
+}
+
+.HomeSection .InitContainer .Left {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.HomeSection .InitContainer .Left .bgImg {
+  position: relative;
+  height: 150px;
+  width: auto;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+.HomeSection .InitContainer .Left .bgImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.HomeSection .InitContainer .Left h4 {
+  position: relative;
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.HomeSection .InitContainer .Left p {
+  position: relative;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  backdrop-filter: blur(10px);
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.HomeSection .InitContainer .Left .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-image: url("./../assets/bosonBG.png");
+  background-size: cover;
+}
+
+.HomeSection .InitContainer .Right {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 15px;
+}
+
+.HomeSection .InitContainer .Right .LottCont {
+  width: 90%;
+  margin-right: 6.5%;
+  height: auto;
+  margin-bottom: 200px;
+}
+
+.HomeSection .InitContainer .Right .chooseBox {
+  position: absolute;
+  bottom: 150px;
+  width: auto;
+  height: auto;
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.HomeSection .InitContainer .Right .chooseBox span {
+  width: 200px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 80%,
+    hsla(183, 55%, 61%, 0.4)
+  );
+  cursor: pointer;
+  border-bottom: 2px solid #66cdd3;
+  transition: background 350ms;
+}
+
+.HomeSection .InitContainer .Right .chooseBox span:hover {
+}
+
+.HomeSection .InitContainer .Right .chooseBox .iconBox {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px grey;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.HomeSection .InitContainer .Right .chooseBox .iconBox svg {
+  width: 55%;
+  height: 55%;
+  fill: #4597b3;
+}
+
+.HomeSection .InitContainer .Right .chooseBox .iconBox svg::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #66cdd3;
+}
+
+.HomeSection .InitContainer .Right .chooseBox p {
+  margin-left: 20px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bolder;
 }
 
 .HomeSection .ProductsCenter {
@@ -41,14 +176,14 @@ flex-direction: column;
 
 .HomeSection .ProductsCenter {
   position: relative;
-  width: 25%;
+  width: 100%;
   height: 700px;
 }
 
-.HomeSection .ProductsCenter h3 {
+.HomeSection .ProductsCenter h2 {
   position: relative;
   text-align: center;
-  margin-top: 30px;
+  margin: 70px 0px;
 }
 
 .HomeSection .ProductsCenter .Box {
@@ -61,42 +196,60 @@ flex-direction: column;
   align-items: center;
   border: 1px solid rgba(174, 174, 174, 0.4);
   margin: 13px auto;
-  background-color: rgba(107, 107, 107, 0.1);
+  background-color: rgba(0, 0, 0, 0.6);
   transition: background-color 350ms;
   cursor: pointer;
   border-radius: 5px;
 }
 
+.HomeSection .ProductsCenter .Box .iconBox {
+  position: absolute;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.HomeSection .ProductsCenter .Box .iconBox svg {
+  width: 70%;
+  height: 70%;
+  fill: #4597b3;
+}
+
 .HomeSection .ProductsCenter .Box .ProductLink {
+  left: 50px;
   position: absolute;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 20px;
+  color: white;
 }
 
 .HomeSection .ProductsCenter .Box:hover {
-  background-color: rgba(107, 107, 107, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.HomeSection .ProductsCenter .Box:hover svg {
+.HomeSection .ProductsCenter .Box:hover .arrow {
   transform: translateX(9px);
 }
 
-.HomeSection .ProductsCenter .Box svg {
+.HomeSection .ProductsCenter .Box .arrow {
   position: absolute;
   right: 20px;
   width: 20px;
   height: 20px;
-  color: #4597b3;
+  color: #66cdd3;
   transition: transform 350ms;
 }
 
 .HomeSection .SolutionsCenter {
   position: relative;
-  width: 65%;
+  width: 100%;
   height: 630px;
   display: flex;
   flex-wrap: wrap;
@@ -112,15 +265,17 @@ flex-direction: column;
 }
 
 .HomeSection .SolutionsCenter .Box {
+  position: relative;
   flex: 1 1 300px;
   margin: 10px;
-  max-width: 170px;
+  max-width: 270px;
   height: 170px;
   display: grid;
   place-items: center;
   overflow: hidden;
   cursor: pointer;
   border-radius: 5px;
+  border: 2px solid #66cdd3;
 }
 
 .HomeSection .SolutionsCenter .Box:hover p {
@@ -128,19 +283,43 @@ flex-direction: column;
 }
 
 .HomeSection .SolutionsCenter .Box img {
+  position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto;
+}
+
+.HomeSection .SolutionsCenter .Box .svgBox {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+}
+
+.HomeSection .SolutionsCenter .Box .svgBox svg {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  fill: #66cdd3;
 }
 
 .HomeSection .SolutionsCenter .Box p {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  background-color: #e0e0e0;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: bolder;
+  backdrop-filter: blur(10px);
+  color: white;
+  padding: 15px 10px;
+  border-radius: 5px;
   text-align: center;
   display: grid;
   place-items: center;
-  padding: 0px 10px;
   font-size: 0.8rem;
   font-weight: 500;
   transition: color 300ms;
@@ -237,5 +416,44 @@ flex-direction: column;
   }
   .HomeSection .SolutionsCenter h2 {
     margin: 20px;
+  }
+
+  .HomeSection .InitContainer {
+    flex-direction: column;
+    height: 200vh;
+  }
+
+  .HomeSection .InitContainer .Left {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .HomeSection .InitContainer .Left .bgImg {
+    height: 100px !important;
+  }
+
+  .HomeSection .InitContainer .Left h4 {
+    font-size: 1.3rem;
+  }
+
+  .HomeSection .InitContainer .Left p {
+    font-size: 0.9rem;
+  }
+
+  .HomeSection .InitContainer .Right .chooseBox {
+    height: 200px;
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .FooterSection {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .FooterSection .column {
+    width: 100%;
+    height: auto;
   }
 }

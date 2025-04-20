@@ -4,11 +4,19 @@ import { GlobalContext } from "@/e2e/globalContext";
 import React, { useContext, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import BasketLottie from "@/assets/Lotties/Basket.json";
+import { useLottie } from "lottie-react";
 
 const Basket: React.FC = () => {
   const router = useRouter();
   const { basketItems, setBasketItems, basketState, setBasketState } =
     useContext(GlobalContext);
+
+  const options = {
+    animationData: BasketLottie,
+    loop: true,
+  };
+  const { View } = useLottie(options);
 
   const basketItemsFilteredMessage = useMemo(() => {
     if (basketItems.length > 0) {
@@ -35,9 +43,9 @@ const Basket: React.FC = () => {
         {basketItems.length === 0 ? (
           <div className="noItems">
             <p>{"Tu carrito esta vacío. Agrégale productos"}</p>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-              <path d="M88.7 223.8L0 375.8 0 96C0 60.7 28.7 32 64 32l117.5 0c17 0 33.3 6.7 45.3 18.7l26.5 26.5c12 12 28.3 18.7 45.3 18.7L416 96c35.3 0 64 28.7 64 64l0 32-336 0c-22.8 0-43.8 12.1-55.3 31.8zm27.6 16.1C122.1 230 132.6 224 144 224l400 0c11.5 0 22 6.1 27.7 16.1s5.7 22.2-.1 32.1l-112 192C453.9 474 443.4 480 432 480L32 480c-11.5 0-22-6.1-27.7-16.1s-5.7-22.2 .1-32.1l112-192z" />
-            </svg>
+
+            <div className="lottieContainer">{View}</div>
+
             <button
               onClick={() => {
                 router.push("/section/products");
@@ -138,29 +146,34 @@ const Basket: React.FC = () => {
           })
         )}
       </div>
-
-      <div className="BottomButton">
-        <button
-          onClick={() => {
-            window.open(
-              `https://wa.me/+524721330869?text=${encodeURIComponent(
-                `Hola, entre a su página y quiero saber la cotización de los siguientes productos: ${basketItemsFilteredMessage}`
-              )}`,
-              "_blank"
-            );
-          }}
-        >
-          <p>{"Cotizar los Productos"}</p>
-        </button>
-      </div>
-
+      {basketItems.length > 0 ? (
+        <div className="BottomButton">
+          <button
+            onClick={() => {
+              window.open(
+                `https://wa.me/+524721330869?text=${encodeURIComponent(
+                  `Hola, entre a su página y quiero saber la cotización de los siguientes productos: ${basketItemsFilteredMessage}`
+                )}`,
+                "_blank"
+              );
+            }}
+          >
+            <p>{"Cotizar los Productos"}</p>
+          </button>
+        </div>
+      ) : null}
       <svg
         onClick={() => setBasketState("Closed")}
         className="XButton"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 512 512"
+        viewBox="0 0 24 24"
+        fill="currentColor"
       >
-        <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
+        <path
+          fillRule="evenodd"
+          d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z"
+          clipRule="evenodd"
+        />
       </svg>
     </div>
   );
