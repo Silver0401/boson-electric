@@ -8,18 +8,15 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import MachinesLottie from "@/assets/Lotties/MachinesIso.json";
-import { useLottie } from "lottie-react";
+
+const Lottie = dynamic(() => import("@/components/Lottie"), { ssr: false });
+
 import LogoWhite from "@/assets/BosonLogoWhite.png";
+import dynamic from "next/dynamic";
 
 export default function Home() {
   const router = useRouter();
   const [selectedBanner, setSelectedBanner] = useState<number>(1);
-  const options = {
-    animationData: MachinesLottie,
-    loop: true,
-  };
-
-  const { View } = useLottie(options);
 
   useEffect(() => {
     setInterval(() => {
@@ -43,7 +40,9 @@ export default function Home() {
             <p>{"Productos y Soluciones Nacionales"}</p>
           </div>
           <div className={styles.Right}>
-            <div className={styles.LottCont}>{View}</div>
+            <div className={styles.LottCont}>
+              <Lottie json={MachinesLottie} />
+            </div>
             <div className={styles.chooseBox}>
               <span onClick={() => router.push("/section/products")}>
                 <div className={styles.iconBox}>

@@ -5,18 +5,13 @@ import React, { useContext, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import BasketLottie from "@/assets/Lotties/Basket.json";
-import { useLottie } from "lottie-react";
+import dynamic from "next/dynamic";
+const Lottie = dynamic(() => import("@/components/Lottie"), { ssr: false });
 
 const Basket: React.FC = () => {
   const router = useRouter();
   const { basketItems, setBasketItems, basketState, setBasketState } =
     useContext(GlobalContext);
-
-  const options = {
-    animationData: BasketLottie,
-    loop: true,
-  };
-  const { View } = useLottie(options);
 
   const basketItemsFilteredMessage = useMemo(() => {
     if (basketItems.length > 0) {
@@ -44,7 +39,9 @@ const Basket: React.FC = () => {
           <div className="noItems">
             <p>{"Tu carrito esta vacío. Agrégale productos"}</p>
 
-            <div className="lottieContainer">{View}</div>
+            <div className="lottieContainer">
+              <Lottie json={BasketLottie} />
+            </div>
 
             <button
               onClick={() => {
