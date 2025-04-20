@@ -2,7 +2,7 @@ import React from "react";
 import { useLottie } from "lottie-react";
 
 interface LottieProps {
-  json: any;
+  json: object;
 }
 
 const Lottie: React.FC<LottieProps> = ({ json }) => {
