@@ -16,13 +16,13 @@ export default async function GenericsPage({
 
   return (
     <div className={styles.Body}>
-      {/* @ts-expect-error */}
+      {/* @ts-expect-error ts doesnt check the keys with the dictionary */}
       <h1>{dict.products[section] ? dict.products[section].n : section}</h1>
 
       <p className={styles.des}>
-        {/* @ts-expect-error */}
+        {/* @ts-expect-error ts doesnt check the keys with the dictionary */}
         {dict.products[section]
-          ? // @ts-expect-error
+          ? // @ts-expect-error ts doesnt check the keys with the dictionary
             dict.products[section].des
           : GenericPageData.description}
       </p>
@@ -37,9 +37,9 @@ export default async function GenericsPage({
               currentLang={lang}
               route2={item.title}
               realTitle={
-                // @ts-expect-error
+                // @ts-expect-error ts doesnt check the keys with the dictionary
                 dict.products[section]
-                  ? // @ts-expect-error
+                  ? // @ts-expect-error ts doesnt check the keys with the dictionary
                     dict.products[section][item.title].n
                   : item.title
               }

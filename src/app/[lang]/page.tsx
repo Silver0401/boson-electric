@@ -91,7 +91,7 @@ export default async function Home({
               <div key={key} className={styles.Box}>
                 <div className={styles.iconBox}>{value.icon}</div>
                 <Link className={styles.ProductLink} href={`/generic/${key}`}>
-                  {/* @ts-expect-error */}
+                  {/* @ts-expect-error ts doesnt check the keys with the dictionary */}
                   {dict.products[key].n}
                 </Link>
                 <svg
@@ -122,7 +122,7 @@ export default async function Home({
                 href={`${lang}/generic/${key}`}
               >
                 <Image src={value.img} alt={`${key}`} />
-                {/* @ts-expect-error */}
+                {/* @ts-expect-error ts doesnt check the keys with the dictionary */}
                 <p>{dict.main[key]}</p>
                 <div className={styles.svgBox}>
                   <svg

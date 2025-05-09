@@ -58,7 +58,7 @@ export default async function RootLayout({
                           value.route ? value.route : `/generic/${value.name}`
                         }
                       >
-                        {/* @ts-expect-error */}
+                        {/* @ts-expect-error ts doesnt check the keys with the dictionary */}
                         <p>{`${dict.main[value.name]}`}</p>
                       </Link>
                     );

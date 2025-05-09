@@ -27,23 +27,23 @@ export default async function Page({
       <div className={styles.leftContainer}>
         <div className={styles.leftInnerCont}>
           <h1>
-            {/* @ts-expect-error */}
+            {/* @ts-expect-error ts doesnt check the keys with the dictionary */}
             {dict.products[filteredSlugSection]
-              ? /* @ts-expect-error */
+              ? /* @ts-expect-error ts doesnt check the keys with the dictionary */
                 dict.products[filteredSlugSection][filteredSlugProduct].n
               : filteredProductData.title}
           </h1>
 
-          {/* @ts-expect-error */}
+          {/* @ts-expect-error ts doesnt check the keys with the dictionary */}
           {dict.products[filteredSlugSection] &&
-            // @ts-expect-error
+            // @ts-expect-error ts doesnt check the keys with the dictionary
             dict.products[filteredSlugSection][filteredSlugProduct].des.length >
               0 && (
               <p className={styles.DesCont}>
                 {
-                  /* @ts-expect-error */
+                  /* @ts-expect-error ts doesnt check the keys with the dictionary */
                   dict.products[filteredSlugSection]
-                    ? /* @ts-expect-error */
+                    ? /* @ts-expect-error ts doesnt check the keys with the dictionary */
                       dict.products[filteredSlugSection][filteredSlugProduct]
                         .des
                     : filteredProductData.overview
@@ -77,9 +77,9 @@ export default async function Page({
                       <p id={styles.numb}>{`${index + 1}) `}</p>
                       <p>
                         {
-                          /* @ts-expect-error */
+                          /* @ts-expect-error ts doesnt check the keys with the dictionary */
                           dict.products[filteredSlugSection]
-                            ? /* @ts-expect-error */
+                            ? /* @ts-expect-error ts doesnt check the keys with the dictionary */
                               dict.products[filteredSlugSection][
                                 filteredSlugProduct
                               ][`d${index + 1}`]
