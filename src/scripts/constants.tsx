@@ -10,7 +10,6 @@ import slicing from "@/assets/Slicing.jpg";
 
 // Images
 // Products
-import HMI1 from "@/assets/Products/HMI1.jpg";
 import img0 from "@/assets/Products/0.png";
 import img1 from "@/assets/Products/1.png";
 import img2 from "@/assets/Products/2.png";
