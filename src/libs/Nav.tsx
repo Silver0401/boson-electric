@@ -70,7 +70,7 @@ const Nav: React.FC<NavProps> = ({ lang }) => {
                 onClick={() => setNavState("Closed")}
               >
                 <Link className="NavLink" href={`/${lang}/${value.route}`}>
-                  {/* @ts-ignore */}
+                  {/* @ts-expect-error */}
                   {lang === "es" ? key : enDict[key]}
                 </Link>
               </li>

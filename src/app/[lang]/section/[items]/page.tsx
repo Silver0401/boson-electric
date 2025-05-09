@@ -25,11 +25,11 @@ export default async function ItemsPage({
 
               return {
                 route2: it.title,
-                // @ts-ignore
+                // @ts-expect-error
                 title:
-                  // @ts-ignore
+                  // @ts-expect-error
                   dict.products[key] && dict.products[key][it.title]
-                    ? // @ts-ignore
+                    ? // @ts-expect-error
                       dict.products[key][it.title].n
                     : it.title,
               };
@@ -40,7 +40,7 @@ export default async function ItemsPage({
               <ProductCard
                 key={key}
                 title={
-                  // @ts-ignore
+                  // @ts-expect-error
                   dict.products[key] ? dict.products[key].n : key
                 }
                 currentLang={lang}
