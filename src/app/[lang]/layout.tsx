@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import styles from "./page.module.css";
 import Link from "next/link";
@@ -59,8 +58,7 @@ export default async function RootLayout({
                           value.route ? value.route : `/generic/${value.name}`
                         }
                       >
-                        {/* <p>{value.name}</p> */}
-                        {/* @ts-ignore */}
+                        {/* @ts-expect-error */}
                         <p>{`${dict.main[value.name]}`}</p>
                       </Link>
                     );

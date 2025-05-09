@@ -11,7 +11,6 @@ import { getDictionary } from "./dictionaries";
 // import { usePathname } from "next/navigation";
 
 import LogoWhite from "@/assets/BosonLogoWhite.png";
-import dynamic from "next/dynamic";
 import CLottie from "@/components/CLottie";
 
 export default async function Home({
@@ -92,7 +91,7 @@ export default async function Home({
               <div key={key} className={styles.Box}>
                 <div className={styles.iconBox}>{value.icon}</div>
                 <Link className={styles.ProductLink} href={`/generic/${key}`}>
-                  {/* @ts-ignore */}
+                  {/* @ts-expect-error */}
                   {dict.products[key].n}
                 </Link>
                 <svg
@@ -123,7 +122,7 @@ export default async function Home({
                 href={`${lang}/generic/${key}`}
               >
                 <Image src={value.img} alt={`${key}`} />
-                {/* @ts-ignore */}
+                {/* @ts-expect-error */}
                 <p>{dict.main[key]}</p>
                 <div className={styles.svgBox}>
                   <svg

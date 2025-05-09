@@ -70,7 +70,7 @@ const Nav: React.FC<NavProps> = ({ lang }) => {
                 onClick={() => setNavState("Closed")}
               >
                 <Link className="NavLink" href={`/${lang}/${value.route}`}>
-                  {/* @ts-expect-error */}
+                  {/* @ts-expect-error ts doesnt check the keys with the dictionary*/}
                   {lang === "es" ? key : enDict[key]}
                 </Link>
               </li>

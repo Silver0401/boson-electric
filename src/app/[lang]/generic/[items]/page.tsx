@@ -16,13 +16,13 @@ export default async function GenericsPage({
 
   return (
     <div className={styles.Body}>
-      {/* @ts-ignore */}
+      {/* @ts-expect-error */}
       <h1>{dict.products[section] ? dict.products[section].n : section}</h1>
 
       <p className={styles.des}>
-        {/*@ts-ignore  */}
+        {/* @ts-expect-error */}
         {dict.products[section]
-          ? // @ts-ignore
+          ? // @ts-expect-error
             dict.products[section].des
           : GenericPageData.description}
       </p>
@@ -37,9 +37,9 @@ export default async function GenericsPage({
               currentLang={lang}
               route2={item.title}
               realTitle={
-                // @ts-ignore
+                // @ts-expect-error
                 dict.products[section]
-                  ? // @ts-ignore
+                  ? // @ts-expect-error
                     dict.products[section][item.title].n
                   : item.title
               }

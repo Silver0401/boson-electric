@@ -27,23 +27,23 @@ export default async function Page({
       <div className={styles.leftContainer}>
         <div className={styles.leftInnerCont}>
           <h1>
-            {/* @ts-ignore */}
+            {/* @ts-expect-error */}
             {dict.products[filteredSlugSection]
-              ? /* @ts-ignore */
+              ? /* @ts-expect-error */
                 dict.products[filteredSlugSection][filteredSlugProduct].n
               : filteredProductData.title}
           </h1>
 
-          {/* @ts-ignore */}
+          {/* @ts-expect-error */}
           {dict.products[filteredSlugSection] &&
-            // @ts-ignore
+            // @ts-expect-error
             dict.products[filteredSlugSection][filteredSlugProduct].des.length >
               0 && (
               <p className={styles.DesCont}>
                 {
-                  /* @ts-ignore */
+                  /* @ts-expect-error */
                   dict.products[filteredSlugSection]
-                    ? /* @ts-ignore */
+                    ? /* @ts-expect-error */
                       dict.products[filteredSlugSection][filteredSlugProduct]
                         .des
                     : filteredProductData.overview
@@ -77,9 +77,9 @@ export default async function Page({
                       <p id={styles.numb}>{`${index + 1}) `}</p>
                       <p>
                         {
-                          /* @ts-ignore */
+                          /* @ts-expect-error */
                           dict.products[filteredSlugSection]
-                            ? /* @ts-ignore */
+                            ? /* @ts-expect-error */
                               dict.products[filteredSlugSection][
                                 filteredSlugProduct
                               ][`d${index + 1}`]
