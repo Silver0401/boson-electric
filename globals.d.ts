@@ -6,13 +6,11 @@ export declare global {
   type products =
     | "PLC"
     | "HMI"
-    | "Controlador CNC"
-    | "Servo Drive"
-    | "Variador de Frecuencia"
-    | "Motor Spindle"
-    | "Motor AC Servo"
-    | "Accesorios"
-    | "Sensores";
+    | "CNCSystem"
+    | "CNCMachine"
+    | "Robots"
+    | "Sensores"
+    | "Servo";
 
   interface productItemProps {
     title: string;
@@ -21,6 +19,7 @@ export declare global {
     features: string;
     parametersImg: string;
     dimensionsImg: string;
+    numberOfDes?: number;
   }
 
   interface productProps {
@@ -60,7 +59,7 @@ export declare global {
 
   //  ---------------------------- Footer Types --------------------------------
 
-  type abouts = "Descripcion de la Empresa" | "Vision y Mision";
+  type abouts = "EnterpriseDescription" | "MisVis";
 
   //  ---------------------------- Footer Types --------------------------------
 

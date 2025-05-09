@@ -1,27 +1,38 @@
 "use client";
 
 import React from "react";
-import styles from "@/app/generic/[items]/page.module.css";
+import styles from "@/app/[lang]/generic/[items]/page.module.css";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 interface GenericCardProps {
   data: productItemProps;
-  title: string;
+  route: string;
+  route2: string;
+  realTitle: string;
+  currentLang: string;
 }
 
-const GenericCard: React.FC<GenericCardProps> = ({ title, data }) => {
+const GenericCard: React.FC<GenericCardProps> = ({
+  route,
+  realTitle,
+  data,
+  currentLang,
+  route2,
+}) => {
   const router = useRouter();
 
   return (
     <div
       className={styles.GenericBox}
       onClick={() => {
-        router.push(`/product/${title}/${data.title}`);
+        router.push(`/${currentLang}/product/${route}/${route2}`);
       }}
     >
-      <h4>{data.title}</h4>
-      <Image src={data.mainImg} alt={data.title} />
+      <div className={styles.bg} />
+      <h4>{realTitle}</h4>
+      <Image src={data.mainImg} alt={realTitle} />
+      <div className="onStock"></div>
       <div className={styles.arrowContainer}>
         <svg
           xmlns="http://www.w3.org/2000/svg"

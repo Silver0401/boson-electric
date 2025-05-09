@@ -1,0 +1,194 @@
+.productDisplayContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #1c5e75, white 50%);
+}
+
+.productDisplayContainer .leftContainer,
+.rightContainer {
+  width: 100%;
+}
+
+.productDisplayContainer .leftContainer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 90vh;
+}
+
+.productDisplayContainer .leftContainer .imgContainer {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  display: grid;
+  place-items: center;
+}
+
+.productDisplayContainer .leftContainer .imgContainer .ProductImg {
+  width: 80%;
+  height: auto;
+}
+
+.productDisplayContainer .leftContainer .leftInnerCont {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.productDisplayContainer .leftContainer .leftInnerCont h1 {
+  position: relative;
+  width: 90%;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: clamp(3rem, 10vw, 6rem);
+  z-index: 0;
+}
+
+.productDisplayContainer .leftContainer .leftInnerCont .IndividualProducButton {
+  position: relative;
+}
+
+.productDisplayContainer .leftContainer .leftInnerCont .DesCont {
+  position: relative;
+  color: white;
+  width: 80%;
+  height: auto;
+  text-align: justify;
+  line-height: 30px;
+  font-size: 0.8rem;
+}
+
+.productDisplayContainer .leftContainer .tip {
+  position: absolute;
+  bottom: 20px;
+  visibility: hidden;
+  left: 0px;
+  padding: 0px 30px;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.productDisplayContainer .rightContainer {
+  position: relative;
+  /* width: 50%;
+  height: 100%; */
+  /* display: blocsk; */
+  overflow: scroll;
+  padding: 40px 0px;
+  height: auto;
+}
+
+.productDisplayContainer .rightContainer .overviewContainer,
+.featursContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.productDisplayContainer .rightContainer .overviewContainer h2 {
+  position: relative;
+  margin: 25px;
+}
+
+.productDisplayContainer .rightContainer .overviewContainer p {
+  position: relative;
+  margin: 25px;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.productDisplayContainer .rightContainer .featursContainer h2 {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* border-top: 2px solid #4698b0;
+  border-bottom: 2px solid #4698b0; */
+  padding: 15px 0px;
+  padding-right: 20%;
+  margin-top: 50px;
+}
+
+.productDisplayContainer .rightContainer .featursContainer p {
+  position: relative;
+  margin: 25px;
+}
+
+.productDisplayContainer .rightContainer .featursContainer .textBox {
+  border-bottom: 1px solid grey;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.productDisplayContainer .rightContainer .featursContainer .textBox #numb {
+  font-weight: bolder;
+  color: #4597b3;
+}
+
+@media (max-width: 800px) {
+  .productDisplayContainer {
+    height: auto;
+    background: linear-gradient(to bottom, #1c5e75, white 90%);
+    /* border: 2px solid green; */
+  }
+
+  .productDisplayContainer .leftContainer h1 {
+    margin-top: 30px;
+    padding-bottom: 50vh;
+    /* border: 2px solid red; */
+  }
+
+  .productDisplayContainer .leftContainer {
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    height: auto;
+  }
+
+  .productDisplayContainer .leftContainer .leftInnerCont {
+    /* border: 2px solid blue; */
+    width: 100%;
+  }
+
+  .productDisplayContainer .leftContainer .imgContainer {
+    position: absolute;
+    top: 150px;
+    /* border: 2px solid yellow; */
+    width: 100%;
+    height: auto;
+  }
+
+  .productDisplayContainer
+    .leftContainer
+    .leftInnerCont
+    .IndividualProducButton {
+    margin: 40px 0px;
+  }
+
+  .productDisplayContainer .leftContainer .leftInnerCont .DesCont {
+    margin-top: 100px;
+  }
+
+  .productDisplayContainer .rightContainer .featursContainer h2 {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 50px;
+    justify-content: center;
+  }
+}

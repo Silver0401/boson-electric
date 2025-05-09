@@ -7,10 +7,32 @@ import { Navs } from "@/scripts/constants";
 import Link from "next/link";
 import { GlobalContext } from "@/e2e/globalContext";
 import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import mx from "@/assets/Langs/mx.png";
+import us from "@/assets/Langs/us.png";
 
-const Nav: React.FC = () => {
+interface NavProps {
+  lang: string;
+}
+
+const Nav: React.FC<NavProps> = ({ lang }) => {
   const { setBasketState, navState, setNavState } = useContext(GlobalContext);
   const router = useRouter();
+  const pathname = usePathname();
+  const enDict = {
+    Productos: "Products",
+    Soluciones: "Solutions",
+    "Acerca de Boson": "About Boson",
+  };
+
+  const changeLanguage = () => {
+    // Construct the new path with the selected locale
+    const segments = pathname.split("/");
+    segments[1] = lang === "en" ? "es" : "en"; // Replace the locale segment
+    const newPath = segments.join("/");
+
+    router.replace(newPath);
+  };
 
   return (
     <>
@@ -30,7 +52,7 @@ const Nav: React.FC = () => {
         <div
           className={"logoContainer"}
           onClick={() => {
-            router.push("/");
+            router.push(`/${lang}`);
             setNavState("Closed");
           }}
         >
@@ -47,8 +69,9 @@ const Nav: React.FC = () => {
                 className={"NavItem"}
                 onClick={() => setNavState("Closed")}
               >
-                <Link className="NavLink" href={value.route}>
-                  {key}
+                <Link className="NavLink" href={`/${lang}/${value.route}`}>
+                  {/* @ts-ignore */}
+                  {lang === "es" ? key : enDict[key]}
                 </Link>
               </li>
             );
@@ -66,6 +89,10 @@ const Nav: React.FC = () => {
             >
               <path d="M2.25 2.25a.75.75 0 0 0 0 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 0 0-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 0 0 0-1.5H5.378A2.25 2.25 0 0 1 7.5 15h11.218a.75.75 0 0 0 .674-.421 60.358 60.358 0 0 0 2.96-7.228.75.75 0 0 0-.525-.965A60.864 60.864 0 0 0 5.68 4.509l-.232-.867A1.875 1.875 0 0 0 3.636 2.25H2.25ZM3.75 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0ZM16.5 20.25a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" />
             </svg>
+          </div>
+
+          <div className="langIcons" onClick={changeLanguage}>
+            <Image src={lang === "en" ? us : mx} alt="lang" />
           </div>
         </ul>
 

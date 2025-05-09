@@ -149,7 +149,7 @@ const Basket: React.FC = () => {
             onClick={() => {
               window.open(
                 `https://wa.me/+524721330869?text=${encodeURIComponent(
-                  `Hola, entre a su página y quiero saber la cotización de los siguientes productos: ${basketItemsFilteredMessage}`
+                  `Me gustaría saber la cotización de los siguientes productos: ${basketItemsFilteredMessage}`
                 )}`,
                 "_blank"
               );

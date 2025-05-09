@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import styles from "@/app/section/[items]/page.module.css";
+import styles from "@/app/[lang]/section/[items]/page.module.css";
+// import styles from "@/app/section/[items]/page.module.css";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -9,28 +10,46 @@ interface ProductCardProps {
   title: string;
   data: productProps;
   route: string;
+  currentLang: string;
+  listOfItems: Array<{
+    route2: string;
+    title: string;
+  }>;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ title, route, data }) => {
+const ProductCard: React.FC<ProductCardProps> = ({
+  title,
+  route,
+  data,
+  listOfItems,
+  currentLang,
+}) => {
   const router = useRouter();
 
   return (
     <div className={styles.ProductBox}>
-      <div className={styles.TopSection}>
+      <div
+        className={styles.TopSection}
+        onClick={() => router.push(`/${currentLang}/generic/${route}`)}
+      >
         <div className={styles.ImgContainer}>
-          <Image src={data.itemsList[0].mainImg} alt={data.route} />
+          <Image
+            className={styles.imgt}
+            src={data.itemsList[0].mainImg}
+            alt={data.route}
+          />
         </div>
         <h5>{title}</h5>
         <p>{`${data.description.substring(0, 50)}...`}</p>
       </div>
       <div className={styles.BottomSection}>
-        {data.itemsList.map((item) => {
+        {listOfItems.map((item) => {
           return (
             <div
-              key={item.title}
+              key={item.route2}
               className={styles.listItem}
               onClick={() => {
-                router.push(`/product/${route}/${item.title}`);
+                router.push(`/product/${route}/${item.route2}`);
               }}
             >
               <p>{item.title}</p>
