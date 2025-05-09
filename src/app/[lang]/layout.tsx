@@ -49,7 +49,8 @@ export default async function RootLayout({
 
               return (
                 <div key={key} className={styles.column}>
-                  <h4>{key}</h4>
+                  {/* @ts-expect-error because ts is dumb */}
+                  <h4>{dict.footer[key]}</h4>
                   {value.list.map((value) => {
                     return (
                       <Link

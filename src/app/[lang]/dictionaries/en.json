@@ -755,7 +755,10 @@
     }
   },
   "footer": {
-    "about": "About",
+    "Acerca": "About Boson",
+    "Productos": "Products",
+    "Soluciones": "Solutions",
+    "Servicios": "Services",
     "a1": "Enterprise Description",
     "a2": "Vision and Mission",
     "services": "Services"
