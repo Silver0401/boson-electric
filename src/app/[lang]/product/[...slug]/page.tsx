@@ -3,7 +3,6 @@ import styles from "./page.module.css";
 import { ProdsAndSols } from "@/scripts/constants";
 import AddToCart from "@/libs/AddToCart";
 import { getDictionary } from "../../dictionaries";
-import { features } from "process";
 
 export default async function Page({
   params,
