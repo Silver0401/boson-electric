@@ -22,7 +22,7 @@ export default async function Home({
   const dict = await getDictionary(lang);
 
   return (
-    <div className={styles.HomeSection}>
+    <div className={styles.HomeSection} id="BasePage">
       <div className={styles.BodySection}>
         <div className={styles.InitContainer}>
           <div className={styles.Left}>

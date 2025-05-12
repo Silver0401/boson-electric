@@ -544,7 +544,7 @@
       "des": "",
       "808": {
         "n": "808",
-        "des": "Controlador CNC",
+        "des": "",
         "d1": "Tipo de aplicación: Torno (T) o fresa (M)",
         "d2": "Ejes controlados simultáneamente: 4 ejes (M) / 3 ejes (T)",
         "d3": "Número máximo de ejes: 4 ejes (M) / 3 ejes (T)",
@@ -557,7 +557,7 @@
       },
       "818": {
         "n": "818",
-        "des": "Controlador CNC",
+        "des": "",
         "d1": "Tipo de aplicación: Fresa (M)",
         "d2": "Ejes controlados simultáneamente: 5 ejes",
         "d3": "Número máximo de ejes: 5 ejes",
@@ -570,7 +570,7 @@
       },
       "848": {
         "n": "848",
-        "des": "Controlador CNC",
+        "des": "",
         "d1": "Tipo de aplicación: Torno (T) o fresa (M)",
         "d2": "Ejes controlados simultáneamente: 9 ejes (M y T)",
         "d3": "Número máximo de ejes: 32 ejes (M y T)",
@@ -633,16 +633,16 @@
         "d1": "Basado en un bajo consumo de energía y alto rendimiento ARM A9 y marco x86",
         "d2": "La posición reservada de la llave de extensión es conveniente para Personalización de diferentes interfaces de trabajo.",
         "d3": "Función de programa macro abierto.",
-        "d5": "Interfaz RJ45 “para todo”, servo, E/S, externa unidad auxiliar, configuración de bus unificada, simplificada diseño y cableado.",
-        "d6": "Función de código G CNC incorporada.",
-        "d7": "Ajuste servo incorporado/ajuste circular/roscado de alta velocidad y otras optimizaciones en línea y funciones de ajuste.",
-        "d8": "Almacenamiento ampliable con doble USB.",
-        "d9": "Interfaz CNC abierta, M3/EtherCAT/pulso/simulación, adaptarse a varios servosistemas nacionales y extranjeros.",
-        "d10": "Edición en línea de PLC, más conveniente para la función mejora y sugerencias.",
-        "d11": "GSG de conversión de pendientes de alta velocidad y alta precisión.",
-        "d12": "La función de cuatro canales admite aplicaciones en complejos situaciones.",
-        "d13": "Algoritmo de Interpolación a escala nanométrica (NIA).",
-        "d14": "Definición rápida de código M sin cambiar el PLC"
+        "d4": "Interfaz RJ45 “para todo”, servo, E/S, externa unidad auxiliar, configuración de bus unificada, simplificada diseño y cableado.",
+        "d5": "Función de código G CNC incorporada.",
+        "d6": "Ajuste servo incorporado/ajuste circular/roscado de alta velocidad y otras optimizaciones en línea y funciones de ajuste.",
+        "d7": "Almacenamiento ampliable con doble USB.",
+        "d8": "Interfaz CNC abierta, M3/EtherCAT/pulso/simulación, adaptarse a varios servosistemas nacionales y extranjeros.",
+        "d9": "Edición en línea de PLC, más conveniente para la función mejora y sugerencias.",
+        "d10": "GSG de conversión de pendientes de alta velocidad y alta precisión.",
+        "d11": "La función de cuatro canales admite aplicaciones en complejos situaciones.",
+        "d12": "Algoritmo de Interpolación a escala nanométrica (NIA).",
+        "d13": "Definición rápida de código M sin cambiar el PLC"
       },
       "M621S": {
         "n": "M621S",
@@ -650,16 +650,16 @@
         "d1": "Edición en línea de PLC, más conveniente para mejora de funciones y avisos.",
         "d2": "EtherCAT/interfaz digital de pulso/analógica interfaz de cantidad.",
         "d3": "Placa de E/S de Bus ampliada a 50 unidades, soporte hasta 3200 puntos de E/S.",
-        "d5": "Función de cuatro canales.",
-        "d6": "El control de movimiento de 50 ejes satisface la función automática.",
-        "d7": "Requisito de múltiples estaciones y múltiples movimientos.",
-        "d8": "Marco x86/pantalla completamente táctil/flexible teclado virtual.",
-        "d9": "Interfaz RJ45 “para todo”, servo, E/S, unidad auxiliar externa, bus unificado configuración, diseño y cableado simplificados.",
-        "d10": "La posición reservada de la llave de extensión es conveniente para la personalización de diferentes trabajos interfaz.",
-        "d11": "Funciones de PLC múltiple para que los clientes cambien entre estados de trabajo.",
-        "d12": "Definición rápida del código M sin cambiar SOCIEDAD ANÓNIMA.",
-        "d13": "Función de código G CNC estándar incorporada.",
-        "d14": "Función de programa macro abierto."
+        "d4": "Función de cuatro canales.",
+        "d5": "El control de movimiento de 50 ejes satisface la función automática.",
+        "d6": "Requisito de múltiples estaciones y múltiples movimientos.",
+        "d7": "Marco x86/pantalla completamente táctil/flexible teclado virtual.",
+        "d8": "Interfaz RJ45 “para todo”, servo, E/S, unidad auxiliar externa, bus unificado configuración, diseño y cableado simplificados.",
+        "d9": "La posición reservada de la llave de extensión es conveniente para la personalización de diferentes trabajos interfaz.",
+        "d10": "Funciones de PLC múltiple para que los clientes cambien entre estados de trabajo.",
+        "d11": "Definición rápida del código M sin cambiar SOCIEDAD ANÓNIMA.",
+        "d12": "Función de código G CNC estándar incorporada.",
+        "d13": "Función de programa macro abierto."
       },
       "M635i": {
         "n": "M635i",
@@ -667,11 +667,11 @@
         "d1": "MES Internet conectado a la gestión en la nube.",
         "d2": "Función de programa macro abierta.",
         "d3": "Función multicanal.",
-        "d5": "Interfaz RJ45 'para todo', servo, E/S, unidad auxiliar externa,poder configurar 1.000 unidades de estación esclava.",
-        "d6": "Admite TI convencional nacional y extranjera intercambio de datos, colaboración eficiente producción y asignación de recursos.",
-        "d7": "CNC estándar EtherCAT / pulse interfaz/interfaz analógica.",
-        "d8": "Sistema de fabricación flexible e inteligente. Control de nubes.",
-        "d9": "Fábrica no tripulada, monitoreo remoto y despacho del progreso de la producción, remoto mantenimiento y depuración de máquina herramienta."
+        "d4": "Interfaz RJ45 'para todo', servo, E/S, unidad auxiliar externa,poder configurar 1.000 unidades de estación esclava.",
+        "d5": "Admite TI convencional nacional y extranjera intercambio de datos, colaboración eficiente producción y asignación de recursos.",
+        "d6": "CNC estándar EtherCAT / pulse interfaz/interfaz analógica.",
+        "d7": "Sistema de fabricación flexible e inteligente. Control de nubes.",
+        "d8": "Fábrica no tripulada, monitoreo remoto y despacho del progreso de la producción, remoto mantenimiento y depuración de máquina herramienta."
       }
     },
     "CNCMachine": {
@@ -734,24 +734,6 @@
         "d6": "Fuente de luz: LED infrarrojo (880 nm)",
         "d7": "Tiempo de respuesta: Max. 15 ms",
         "d8": "Tipo de señal de salida: NPN, PNP, relé"
-      }
-    },
-    "Empaques e Impresiones": {
-      "n": "Empaques e Impresiones",
-      "des": "coso",
-      "HNC VFDs and Servo For Aseptic Filling Machine": {
-        "n": "Encoders",
-        "des": "The medium is heated following filling (in a purified bottle) together with the bottle in the so-called pasteurizer",
-        "d1": "The medium is heated shortly before the filler",
-        "d2": "Typical products include tea, 100% juices, drinks with a pH value higher than 4.5 (i.e. bacterially sensitive products). This is often followed by aseptic filling",
-        "d3": "Filling is carried out in a clean room. Previously the complete filler was in a clean room, nowadays only the actual filling process is located in a clean room",
-        "d4": "2~5 servo axis per machine or 1 big motor drive with gearbox",
-        "d5": "Synchronous operation and position control",
-        "d6": "Power: 12000~40000 bottles/ hr",
-        "d7": "HV100 / HV480 / HV610 / HSD2 / SV-E3 / HSD7",
-        "d8": "Dynamic response for acceleration/ emergency stop",
-        "d9": "Angular synchronous operation with external encoder",
-        "d10": "Servo technology in high end machine(every filler has one servo motor)"
       }
     }
   },

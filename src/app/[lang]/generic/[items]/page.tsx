@@ -15,7 +15,7 @@ export default async function GenericsPage({
   const GenericPageData = ProdsAndSols[section];
 
   return (
-    <div className={styles.Body}>
+    <div className={styles.Body} id="BasePage">
       {/* @ts-expect-error ts doesnt check the keys with the dictionary */}
       <h1>{dict.products[section] ? dict.products[section].n : section}</h1>
 

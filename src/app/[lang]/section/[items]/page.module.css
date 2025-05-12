@@ -1,14 +1,3 @@
-.title {
-  margin-top: 30px;
-  display: grid;
-  padding: 12px 5px;
-  place-items: center;
-  color: #4698b3;
-  margin: 40px 20px;
-  border-radius: 10px;
-  font-size: 2rem;
-}
-
 .Body {
   height: auto;
   width: 100vw;
@@ -17,6 +6,21 @@
   justify-content: space-around;
   align-items: center;
   padding-bottom: 40px;
+  padding-top: 150px;
+}
+
+.Body .title {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  display: grid;
+  padding: 12px 5px;
+  place-items: center;
+  color: #4698b3;
+  margin: 40px 20px;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .Body .ProductBox {
@@ -32,7 +36,7 @@
   overflow: hidden;
   margin: 30px 10px;
   border-radius: 20px;
-  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 5px grey;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -87,7 +91,7 @@
 }
 
 .Body .ProductBox .TopSection .ImgContainer .imgt {
-  width: 100%;
+  width: 60%;
   height: auto;
 }
 

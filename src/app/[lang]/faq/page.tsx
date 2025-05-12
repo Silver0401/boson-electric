@@ -2,7 +2,7 @@ import styles from "./page.module.css";
 
 export default async function AboutPage() {
   return (
-    <div className={styles.Body}>
+    <div className={styles.Body} id="BasePage">
       <h3>{"FAQ"}</h3>
       <h4>{"¿Cómo puedo solicitar una cotización?"}</h4>
       <p>

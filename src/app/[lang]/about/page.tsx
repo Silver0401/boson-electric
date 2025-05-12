@@ -3,7 +3,7 @@ import GMaps from "@/libs/GoogleMaps";
 
 export default async function AboutPage() {
   return (
-    <div className={styles.Body}>
+    <div className={styles.Body} id="BasePage">
       <h3>{"Descripción de la Empresa"}</h3>
       <p>
         {

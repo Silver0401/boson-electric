@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import { ProdsAndSols } from "@/scripts/constants";
 import AddToCart from "@/libs/AddToCart";
 import { getDictionary } from "../../dictionaries";
+import { features } from "process";
 
 export default async function Page({
   params,
@@ -23,7 +24,7 @@ export default async function Page({
   )[0];
 
   return (
-    <div className={styles.productDisplayContainer}>
+    <div className={styles.productDisplayContainer} id="BasePage">
       <div className={styles.leftContainer}>
         <div className={styles.leftInnerCont}>
           <h1>
@@ -61,15 +62,21 @@ export default async function Page({
             className={styles.ProductImg}
             src={filteredProductData.mainImg}
             alt={filteredProductData.title}
+            id={
+              filteredProductData.numberOfDes === undefined
+                ? styles.SolutionProd
+                : ""
+            }
           />
         </div>
       </div>
       <div className={styles.rightContainer}>
-        {filteredProductData.features !== "NA" && (
-          <div className={styles.featursContainer}>
-            <h2>{"Especificaciones"}</h2>
-            {
-              Array(filteredProductData.numberOfDes)
+        {/* {filteredProductData.features !== "NA" && ( */}
+        <div className={styles.featursContainer}>
+          <h2>{"Especificaciones"}</h2>
+          {filteredProductData.numberOfDes ? (
+            <>
+              {Array(filteredProductData.numberOfDes)
                 .fill("0")
                 .map((_i, index) => {
                   return (
@@ -88,18 +95,21 @@ export default async function Page({
                       </p>
                     </div>
                   );
-                })
-              // filteredProductData.features
-              //   .split(/\d+\.\s/)
-              //   .filter(Boolean)
-              //   .map((sentence, index) => {
-              //     if (index !== 0) {
-
-              //     }
-              //   })
-            }
-          </div>
-        )}
+                })}
+            </>
+          ) : (
+            filteredProductData.overview.split("-").map((sentence, index) => {
+              console.log(sentence);
+              return (
+                <div className={styles.textBox} key={`${index + 1}`}>
+                  <p id={styles.numb}>{`${index + 1}) `}</p>
+                  <p>{sentence}</p>
+                </div>
+              );
+            })
+          )}
+        </div>
+        {/* )} */}
       </div>
     </div>
   );
