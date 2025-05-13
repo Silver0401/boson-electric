@@ -56,7 +56,9 @@ export default async function RootLayout({
                       <Link
                         key={`${key} ${value.name}`}
                         href={
-                          value.route ? value.route : `/generic/${value.name}`
+                          value.route
+                            ? `/${lang}/${value.route}`
+                            : `/${lang}/generic/${value.name}`
                         }
                       >
                         {/* @ts-expect-error ts doesnt check the keys with the dictionary */}
@@ -68,7 +70,11 @@ export default async function RootLayout({
               );
             })}
           </div>
-          <Basket />
+          <Basket
+            title={dict.footer["BasketTitle"]}
+            subtitle={dict.footer["BasketSubtitle"]}
+            btn={dict.footer["BasketButton"]}
+          />
         </GlobalContextProvider>
       </body>
     </html>

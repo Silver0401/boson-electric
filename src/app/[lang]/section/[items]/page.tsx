@@ -41,6 +41,10 @@ export default async function ItemsPage({
                 // @ts-expect-error ts doesnt check the keys with the dictionary
                 dict.products[key] ? dict.products[key].n : key
               }
+              description={
+                // @ts-expect-error ts doesnt check the keys with the dictionary
+                dict.products[key] ? dict.products[key].des : value.description
+              }
               currentLang={lang}
               route={key}
               data={value}

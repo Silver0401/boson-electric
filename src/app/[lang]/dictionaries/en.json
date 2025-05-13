@@ -92,56 +92,9 @@
         "d10": "Programming via CODESYS"
       }
     },
-    "HMI": {
-      "n": "HMI",
-      "des": "The HT3000 HMI family stands out for its fully adjustable design, bright colors, and clearer resolution. It also offers advanced capabilities such as remote programming, firmware download, and updates. It incorporates integrated cloud access and alarm notifications, enabling efficient management and optimized connectivity through the HNC cloud platform, MQTT, or its IoTBus Cloud app.",
-      "HT3000": {
-        "n": "HT3000",
-        "des": "",
-        "d1": "Available dimensions: 4.3” 7” 10.1” 15.6”",
-        "d2": "Screen resolution: 800 x 400 pixels, 1024 x 600 pixels, 1920 x 1080 pixels",
-        "d3": "Integrated communication protocol: Ethernet RS485",
-        "d4": "Connectivity: LAN, 4G, WIFI",
-        "d5": "Compatible with HNC Cloud and IoT Bus App for iOS and Android",
-        "d6": "Free programming software."
-      },
-      "HBOX": {
-        "n": "H-BOX",
-        "des": "",
-        "d1": "Integrated communication protocol: Ethernet, RS485",
-        "d2": "Connectivity: LAN, 4G, WIFI",
-        "d3": "Compatible with HNC Cloud and IoT Bus App for iOS and Android",
-        "d4": "Free programming software."
-      },
-      "HBOXMPRO": {
-        "n": "H-BOX-M/PRO",
-        "des": "",
-        "d1": "Integrated communication protocol: Ethernet, RS485",
-        "d2": "Connectivity: LAN, 4G, WIFI",
-        "d3": "Up to 8 configurable DI/DO",
-        "d4": "Compatible with HNC Cloud and IoT Bus App for iOS and Android",
-        "d5": "Free programming software."
-      },
-      "HCCA8": {
-        "n": "HCC-A8/A8-E",
-        "des": "",
-        "d1": "24V DC power supply",
-        "d2": "Integrated communication protocol: Ethernet, RS485",
-        "d3": "Connectivity: LAN, 4G, WIFI",
-        "d4": "Up to 8 points for digital inputs",
-        "d5": "Supports up to 15 local I/O and special function expansion modules",
-        "d6": "Compatible with HNC Cloud and IoT Bus App for iOS and Android",
-        "d7": "Free programming software."
-      },
-      "HRS": {
-        "n": "HRS",
-        "des": "",
-        "d1": "Three-phase AC 380~440V power supply",
-        "d2": "Available power from 5.5kW to 600kW",
-        "d3": "Communication protocol: Modbus RTU RS485",
-        "d4": "Operation mode: Multi-start Programmable delayed start function",
-        "d5": "Variety of protection functions against: Overvoltage, Overheating, Phase loss, Motor overload, etc."
-      },
+    "SpeedVariators": {
+      "n": "Speed Controllers",
+      "des": "",
       "HV10": {
         "n": "HV10",
         "des": "",
@@ -200,7 +153,62 @@
         "d7": "Compatible with LCD keypad with parameter copy function.",
         "d8": "Quick parameter search.",
         "d9": "Compatible with parameter configuration software and oscilloscope."
+      }
+    },
+    "HMI": {
+      "n": "HMI",
+      "des": "The HT3000 HMI family stands out for its fully adjustable design, bright colors, and clearer resolution. It also offers advanced capabilities such as remote programming, firmware download, and updates. It incorporates integrated cloud access and alarm notifications, enabling efficient management and optimized connectivity through the HNC cloud platform, MQTT, or its IoTBus Cloud app.",
+      "HT3000": {
+        "n": "HT3000",
+        "des": "",
+        "d1": "Available dimensions: 4.3” 7” 10.1” 15.6”",
+        "d2": "Screen resolution: 800 x 400 pixels, 1024 x 600 pixels, 1920 x 1080 pixels",
+        "d3": "Integrated communication protocol: Ethernet RS485",
+        "d4": "Connectivity: LAN, 4G, WIFI",
+        "d5": "Compatible with HNC Cloud and IoT Bus App for iOS and Android",
+        "d6": "Free programming software."
       },
+      "HBOX": {
+        "n": "H-BOX",
+        "des": "",
+        "d1": "Integrated communication protocol: Ethernet, RS485",
+        "d2": "Connectivity: LAN, 4G, WIFI",
+        "d3": "Compatible with HNC Cloud and IoT Bus App for iOS and Android",
+        "d4": "Free programming software."
+      },
+      "HBOXMPRO": {
+        "n": "H-BOX-M/PRO",
+        "des": "",
+        "d1": "Integrated communication protocol: Ethernet, RS485",
+        "d2": "Connectivity: LAN, 4G, WIFI",
+        "d3": "Up to 8 configurable DI/DO",
+        "d4": "Compatible with HNC Cloud and IoT Bus App for iOS and Android",
+        "d5": "Free programming software."
+      },
+      "HCCA8": {
+        "n": "HCC-A8/A8-E",
+        "des": "",
+        "d1": "24V DC power supply",
+        "d2": "Integrated communication protocol: Ethernet, RS485",
+        "d3": "Connectivity: LAN, 4G, WIFI",
+        "d4": "Up to 8 points for digital inputs",
+        "d5": "Supports up to 15 local I/O and special function expansion modules",
+        "d6": "Compatible with HNC Cloud and IoT Bus App for iOS and Android",
+        "d7": "Free programming software."
+      },
+      "HRS": {
+        "n": "HRS",
+        "des": "",
+        "d1": "Three-phase AC 380~440V power supply",
+        "d2": "Available power from 5.5kW to 600kW",
+        "d3": "Communication protocol: Modbus RTU RS485",
+        "d4": "Operation mode: Multi-start Programmable delayed start function",
+        "d5": "Variety of protection functions against: Overvoltage, Overheating, Phase loss, Motor overload, etc."
+      }
+    },
+    "StopUnits": {
+      "n": "Braking Units",
+      "des": "",
       "HBU": {
         "n": "HBU",
         "des": "",
@@ -320,7 +328,7 @@
       }
     },
     "Robots": {
-      "n": "HSR Robots",
+      "n": "Robots",
       "des": "HNC Electric industrial robots are designed to provide precision and speed for today's demanding manufacturing applications. HNC also offers a complete range of industrial equipment to help manufacturers improve their production lines.",
       "HSRJH": {
         "n": "HSR-JH Series",
@@ -674,7 +682,7 @@
       }
     },
     "CNCMachine": {
-      "n": "Maquinas CNC",
+      "n": "CNC Machines",
       "des": "",
       "CentrodeMecanizado": {
         "n": "Machining Center",
@@ -688,7 +696,7 @@
       }
     },
     "Sensores": {
-      "n": "Sensores",
+      "n": "Sensors",
       "des": "",
       "Encoders": {
         "n": "Encoders",
@@ -737,12 +745,35 @@
     }
   },
   "footer": {
+    "Especifications": "Specifications",
+    "BasketTitle": "My Basket",
+    "BasketSubtitle": "Your Basket is empty. Add some products",
+    "BasketButton": "See Products",
     "Acerca": "About Boson",
     "Productos": "Products",
     "Soluciones": "Solutions",
     "Servicios": "Services",
     "a1": "Enterprise Description",
     "a2": "Vision and Mission",
-    "services": "Services"
+    "services": "Services",
+    "EP": "Enterprise Description",
+    "EPdes": "At Boson Distribution, we specialize in offering advanced products and solutions in industrial automation, focusing on the distribution of cutting-edge technology from the HNC Electric brand. Our goal is to provide our customers with innovative products designed to enhance the precision, performance, and efficiency of their industrial processes. At Boson Distribution, we are committed to quality and technology as drivers of industrial development.",
+    "MV": "Mission and Vision",
+    "MVdes": "At Boson Distribution, our mission is to drive industrial growth through the distribution of advanced automation products from HNC Electric. We focus on providing technological solutions that optimize the precision, performance, and efficiency of industrial processes, offering close, specialized, and customer-oriented service. Our vision is to become regional leaders in the distribution of automation technology, recognized for promoting innovation, quality, and sustainable development. We aspire to be a bridge to industrial digital transformation, contributing to a more efficient, competitive, and technologically advanced industrial environment.",
+    "WTF": "Where to Find Us",
+    "faq1": "How can I request a quote?",
+    "faq1des": "You can add the products of your interest to the shopping cart on our website and then proceed to request a quote. Alternatively, you can contact us directly through our contact form or by phone for personalized assistance.",
+    "faq2": "Do you offer technical support for the products?",
+    "faq2des": "Yes, we provide specialized technical support for all the products we distribute. Our team is trained to assist you with installation, configuration, and troubleshooting you may encounter.",
+    "faq3": "What is the delivery time for the products?",
+    "faq3des": "Delivery time varies depending on product availability and customer location. Generally, orders are processed and shipped within 3 to 5 business days after payment confirmation.",
+    "faq4": "Do you offer warranties on your products?",
+    "faq4des": "Yes, all our products come with the official HNC Electric warranty. The duration and terms of the warranty depend on the specific product. For more details, please check our warranty section or contact us directly.",
+    "faq5": "Do you provide training for the use of the equipment?",
+    "faq5des": "We offer training sessions to ensure that our customers can use the equipment efficiently and safely. These training sessions can be scheduled according to your needs and can be conducted in person or virtually.",
+    "faq6": "How can I access the product manuals?",
+    "faq6des": "Product manuals are available for download on our website in the downloads section. If you have difficulty finding a specific manual, please do not hesitate to contact us for assistance.",
+    "faq7": "What should I do if my product has a malfunction?",
+    "faq7des": "If a product malfunctions, we recommend contacting our technical support team to diagnose the issue and determine the best solution, whether it be repair or replacement."
   }
 }

@@ -256,7 +256,8 @@
   align-items: center;
   justify-content: center;
   padding-top: 30px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .HomeSection .SolutionsCenter h2 {

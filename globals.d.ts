@@ -7,6 +7,8 @@ export declare global {
     | "PLC"
     | "HMI"
     | "CNCSystem"
+    | "SpeedVariators"
+    | "StopUnits"
     | "CNCMachine"
     | "Robots"
     | "Sensores"
@@ -79,6 +81,8 @@ export declare global {
   //  ---------------------------- Nav Types --------------------------------
 
   type Navs = "Productos" | "Soluciones" | "Acerca de Boson";
+  // | "Contactos"
+  // | "Ubicacion";
 
   interface NavsProps {
     route: string;

@@ -8,7 +8,13 @@ import BasketLottie from "@/assets/Lotties/Basket.json";
 import dynamic from "next/dynamic";
 const Lottie = dynamic(() => import("@/components/Lottie"), { ssr: false });
 
-const Basket: React.FC = () => {
+interface BasketProps {
+  title: string;
+  subtitle: string;
+  btn: string;
+}
+
+const Basket: React.FC<BasketProps> = ({ title, subtitle, btn }) => {
   const router = useRouter();
   const { basketItems, setBasketItems, basketState, setBasketState } =
     useContext(GlobalContext);
@@ -33,11 +39,13 @@ const Basket: React.FC = () => {
 
   return (
     <div className="BasketContainer" id={`Basket${basketState}`}>
-      <h2>{"Mi Carrito"}</h2>
+      <h2>{title}</h2>
+      {/* <h2>{"Mi Carrito"}</h2> */}
       <div className="BasketInnerContainer">
         {basketItems.length === 0 ? (
           <div className="noItems">
-            <p>{"Tu carrito esta vacío. Agrégale productos"}</p>
+            <p>{subtitle}</p>
+            {/* <p>{"Tu carrito esta vacío. Agrégale productos"}</p> */}
 
             <div className="lottieContainer">
               <Lottie json={BasketLottie} />
@@ -49,7 +57,7 @@ const Basket: React.FC = () => {
                 setBasketState("Closed");
               }}
             >
-              <p>{"Ver Productos"}</p>
+              <p>{btn}</p>
             </button>
           </div>
         ) : (

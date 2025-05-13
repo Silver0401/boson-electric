@@ -10,6 +10,7 @@ interface ProductCardProps {
   title: string;
   data: productProps;
   route: string;
+  description: string;
   currentLang: string;
   listOfItems: Array<{
     route2: string;
@@ -21,6 +22,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   title,
   route,
   data,
+  description,
   listOfItems,
   currentLang,
 }) => {
@@ -40,7 +42,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           />
         </div>
         <h5>{title}</h5>
-        <p>{`${data.description.substring(0, 50)}...`}</p>
+        <p>{`${description.substring(0, 50)}...`}</p>
       </div>
       <div className={styles.BottomSection}>
         {listOfItems.map((item) => {

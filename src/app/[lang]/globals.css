@@ -8,7 +8,8 @@
 html {
   width: auto;
   height: auto;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 body {
@@ -141,7 +142,8 @@ button svg {
   height: 90%;
   display: grid;
   place-items: center;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   padding-bottom: 100px;
 }
 
@@ -563,6 +565,13 @@ button svg {
   fill: white;
 }
 
+.Nav .SocialMedia .tiktok .linkedin svg {
+  position: relative;
+  width: 20%;
+  height: 20%;
+  fill: white;
+}
+
 .Nav .SocialMedia .tiktok::before {
   content: "";
   position: absolute;
@@ -582,6 +591,15 @@ button svg {
 }
 
 .Nav .SocialMedia .instagram::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.Nav .SocialMedia .linkedin::before {
   content: "";
   position: absolute;
   width: 15px;

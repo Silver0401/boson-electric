@@ -8,12 +8,12 @@
     "products": "Productos",
     "solutions": "Soluciones",
     "FaQ": "FaQ",
-    "MisVis": "Misión y Vsión",
+    "MisVis": "Misión y Visión",
     "EnterpriseDescription": "Descripción de la Empresa",
     "HMI": "HMI",
     "PLC": "PLC",
     "CNCSystem": "Sistemas CNC",
-    "CNCMachine": "Maquinas CNC",
+    "CNCMachine": "Máquinas CNC",
     "Servo": "Servodrive & Servomotor",
     "Robots": "Robots HSR",
     "Sensores": "Sensores",
@@ -93,56 +93,9 @@
         "d10": "Programación mediante CODESYS"
       }
     },
-    "HMI": {
-      "n": "HMI",
-      "des": "La familia de HMI’s HT3000 destaca por su diseño completamente ajustable, colores brillantes y una resolución más clara, además, ofrece capacidades avanzadas como la programación remota, así como la descarga y actualización de firmware. Incorpora acceso integrado a la nube y notificaciones de alarma, permitiendo una gestión eficiente y conectividad optimizada a través de la plataforma HNC en la nube, MQTT o en su aplicación, IoTBus Cloud.",
-      "HT3000": {
-        "n": "HT3000",
-        "des": "",
-        "d1": "Dimensiones disponibles: 4.3” 7” 10.1” 15.6”",
-        "d2": "Resolución de la pantalla: 800 x 400 pixeles, 1024 x 600 pixeles, 1920 x 1080 pixeles",
-        "d3": "Protocolo de comunicación integrado: Ethernet RS485",
-        "d4": "Conectividad: LAN, 4G, WIFI",
-        "d5": "Compatible con HNC Cloud e IoT Bus App para iOS y Android",
-        "d6": "Software de programación gratuito."
-      },
-      "HBOX": {
-        "n": "H-BOX",
-        "des": "",
-        "d1": "Protocolo de comunicación integrado: Ethernet, RS485",
-        "d2": "Conectividad: LAN, 4G, WIFI",
-        "d3": "Compatible con HNC Cloud e IoT Bus App para iOS y Android",
-        "d4": "Software de programación gratuito."
-      },
-      "HBOXMPRO": {
-        "n": "H-BOX-M/PRO",
-        "des": "",
-        "d1": "Protocolo de comunicación integrado: Ethernet, RS485",
-        "d2": "Conectividad: LAN, 4G, WIFI",
-        "d3": "Hasta 8 DI/DO configurables",
-        "d4": "Compatible con HNC Cloud e IoT Bus App para iOS y Android",
-        "d5": "Software de programación gratuito."
-      },
-      "HCCA8": {
-        "n": "HCC-A8/A8-E",
-        "des": "",
-        "d1": "Alimentación a 24V DC",
-        "d2": "Protocolo de comunicación integrado: Ethernet, RS485",
-        "d3": "Conectividad: LAN, 4G, WIFI",
-        "d4": "Hasta 8 puntos para entradas digitales",
-        "d5": "Admite hasta 15 módulos de expansión locales de I/O y de funciones especiales",
-        "d6": "Compatible con HNC Cloud e IoT Bus App para iOS y Android",
-        "d7": "Software de programación gratuito."
-      },
-      "HRS": {
-        "n": "HRS",
-        "des": "",
-        "d1": "Alimentación trifásica CA 380~440V",
-        "d2": "Potencias disponibles desde 5.5kW hasta 600kW",
-        "d3": "Protocolo de comunicación: Modbus RTU RS485",
-        "d4": "Modo de operación: Multi arranque Función de arranque retardado programable",
-        "d5": "Variedad de funciones de protección contra: Sobretensión, Sobrecalentamiento, Pérdida de fase,Sobrecarga del motor, etc"
-      },
+    "SpeedVariators": {
+      "n": "Variadores de Velocidad",
+      "des": "",
       "HV10": {
         "n": "HV10",
         "des": "",
@@ -201,7 +154,62 @@
         "d7": "Compatible con keypad LCD con función de copia de parámetros.",
         "d8": "Búsqueda rápida de parámetros.",
         "d9": "Compatible con software de configuración de parámetros y osciloscopio."
+      }
+    },
+    "HMI": {
+      "n": "HMI",
+      "des": "La familia de HMI’s HT3000 destaca por su diseño completamente ajustable, colores brillantes y una resolución más clara, además, ofrece capacidades avanzadas como la programación remota, así como la descarga y actualización de firmware. Incorpora acceso integrado a la nube y notificaciones de alarma, permitiendo una gestión eficiente y conectividad optimizada a través de la plataforma HNC en la nube, MQTT o en su aplicación, IoTBus Cloud.",
+      "HT3000": {
+        "n": "HT3000",
+        "des": "",
+        "d1": "Dimensiones disponibles: 4.3” 7” 10.1” 15.6”",
+        "d2": "Resolución de la pantalla: 800 x 400 pixeles, 1024 x 600 pixeles, 1920 x 1080 pixeles",
+        "d3": "Protocolo de comunicación integrado: Ethernet RS485",
+        "d4": "Conectividad: LAN, 4G, WIFI",
+        "d5": "Compatible con HNC Cloud e IoT Bus App para iOS y Android",
+        "d6": "Software de programación gratuito."
       },
+      "HBOX": {
+        "n": "H-BOX",
+        "des": "",
+        "d1": "Protocolo de comunicación integrado: Ethernet, RS485",
+        "d2": "Conectividad: LAN, 4G, WIFI",
+        "d3": "Compatible con HNC Cloud e IoT Bus App para iOS y Android",
+        "d4": "Software de programación gratuito."
+      },
+      "HBOXMPRO": {
+        "n": "H-BOX-M/PRO",
+        "des": "",
+        "d1": "Protocolo de comunicación integrado: Ethernet, RS485",
+        "d2": "Conectividad: LAN, 4G, WIFI",
+        "d3": "Hasta 8 DI/DO configurables",
+        "d4": "Compatible con HNC Cloud e IoT Bus App para iOS y Android",
+        "d5": "Software de programación gratuito."
+      },
+      "HCCA8": {
+        "n": "HCC-A8/A8-E",
+        "des": "",
+        "d1": "Alimentación a 24V DC",
+        "d2": "Protocolo de comunicación integrado: Ethernet, RS485",
+        "d3": "Conectividad: LAN, 4G, WIFI",
+        "d4": "Hasta 8 puntos para entradas digitales",
+        "d5": "Admite hasta 15 módulos de expansión locales de I/O y de funciones especiales",
+        "d6": "Compatible con HNC Cloud e IoT Bus App para iOS y Android",
+        "d7": "Software de programación gratuito."
+      },
+      "HRS": {
+        "n": "HRS",
+        "des": "",
+        "d1": "Alimentación trifásica CA 380~440V",
+        "d2": "Potencias disponibles desde 5.5kW hasta 600kW",
+        "d3": "Protocolo de comunicación: Modbus RTU RS485",
+        "d4": "Modo de operación: Multi arranque Función de arranque retardado programable",
+        "d5": "Variedad de funciones de protección contra: Sobretensión, Sobrecalentamiento, Pérdida de fase,Sobrecarga del motor, etc"
+      }
+    },
+    "StopUnits": {
+      "n": "Unidades de Frenado",
+      "des": "",
       "HBU": {
         "n": "HBU",
         "des": "",
@@ -321,7 +329,7 @@
       }
     },
     "Robots": {
-      "n": "Robots HSR",
+      "n": "Robots",
       "des": "Los robots industriales HNC Electric están diseñados para otorgar precisión y velocidad a las exigentes aplicaciones de manufactura de hoy en día. HNC ofrece también una completa gama equipo industrial para ayudar a los fabricantes a mejorar sus líneas de producción.",
       "HSRJH": {
         "n": "HSR-JH Series",
@@ -679,7 +687,7 @@
       "des": "",
       "CentrodeMecanizado": {
         "n": "Centro de Mecanizado ",
-        "des": "Nuestros centros de mecanizado CNC tienen un excelente rendimiento de trabajo, combinando estabilidad, precisión, eficien- cia de procesamiento, tecnología de control CNC avanzada y un proceso de fabricación refinado. Basados en productos de alta calidad y un sólido equipo de soporte técnico, estamos comprometidos en brindarles a todos los clientes las mejores y más rentables soluciones de mecanizado CNC. Nuestros centros de mecanizado CNC se utilizan ampliamente en el procesa- miento y fabricación de metales en los campos automotriz, de ingeniería mecáni- ca, médico y otros.",
+        "des": "Nuestros centros de mecanizado CNC tienen un excelente rendimiento de trabajo, combinando estabilidad, precisión, eficiencia de procesamiento, tecnología de control CNC avanzada y un proceso de fabricación refinado. Basados en productos de alta calidad y un sólido equipo de soporte técnico, estamos comprometidos en brindarles a todos los clientes las mejores y más rentables soluciones de mecanizado CNC. Nuestros centros de mecanizado CNC se utilizan ampliamente en el procesamiento y fabricación de metales en los campos automotriz, de ingeniería mecánica, médico y otros.",
         "d1": "Ejes: 3 Ejes, 4 Ejes, 5 Ejes"
       },
       "TornoCNC": {
@@ -738,12 +746,35 @@
     }
   },
   "footer": {
+    "Especifications": "Especificaciones",
+    "BasketTitle": "Mi Carrito",
+    "BasketSubtitle": "Tu carrito esta vacío. Agrégale productos",
+    "BasketButton": "Ver Productos",
     "Acerca": "Acerca de Boson",
     "Productos": "Productos",
     "Soluciones": "Soluciones",
     "Servicios": "Servicios",
     "a1": "Descripción de la Empresa",
     "a2": "Visión y Misión",
-    "services": "Servicios"
+    "services": "Servicios",
+    "EP": "Descripción de la Empresa",
+    "EPdes": "En Boson Distribución nos especializamos en ofrecer productos y soluciones avanzadas en automatización industrial, con un enfoque en la distribución de tecnología de vanguardia de la marca HNC Electric. Nuestro objetivo es brindar a nuestros clientes productos innovadores diseñados para mejorar la precisión, el rendimiento y la eficiencia de sus procesos industriales. En Boson Distribución, apostamos por la calidad y la tecnología como motores del desarrollo industrial.",
+    "MV": "Misión y Visión",
+    "MVdes": "En Boson Distribución, nuestra misión es impulsar el crecimiento industrial mediante la distribución de productos avanzados de automatización de HNC Electric. Nos enfocamos en proporcionar soluciones tecnológicas que optimicen la precisión, el rendimiento y la eficiencia de los procesos industriales, ofreciendo un servicio cercano, especializado y orientado a las necesidades de nuestros clientes. Nuestra visión es convertirnos en líderes regionales en la distribución de tecnología de automatización, siendo reconocidos por promover la innovación, la calidad y el desarrollo sostenible. Aspiramos a ser un puente hacia la transformación digital industrial, contribuyendo a un entorno industrial más eficiente, competitivo y tecnológicamente avanzado.",
+    "WTF": "Dónde Encontrarnos",
+    "faq1": "¿Cómo puedo solicitar una cotización?",
+    "faq1des": "Puede agregar los productos de su interés al carrito de compras en nuestro sitio web y luego proceder a solicitar una cotización. Alternativamente, puede contactarnos directamente a través de nuestro formulario de contacto o por teléfono para recibir asistencia personalizada.",
+    "faq2": "¿Ofrecen soporte técnico para los productos?",
+    "faq2des": "Sí, proporcionamos soporte técnico especializado para todos los productos que distribuimos. Nuestro equipo está capacitado para asistirle en la instalación, configuración y resolución de problemas que pueda encontrar.​",
+    "faq3": "¿Cuál es el tiempo de entrega de los productos?",
+    "faq3des": "El tiempo de entrega varía según la disponibilidad del producto y la ubicación del cliente. Generalmente, los pedidos se procesan y envían dentro de los 3 a 5 días hábiles posteriores a la confirmación del pago.​",
+    "faq4": "¿Ofrecen garantías en sus productos?",
+    "faq4des": "Sí, todos nuestros productos cuentan con la garantía oficial de HNC Electric. La duración y términos de la garantía dependen del producto específico. Para más detalles, consulte nuestra sección de garantías o contáctenos directamente.",
+    "faq5": "¿Proporcionan capacitación para el uso de los equipos?",
+    "faq5des": "Ofrecemos sesiones de capacitación para asegurar que nuestros clientes puedan utilizar los equipos de manera eficiente y segura. Estas capacitaciones pueden ser programadas según sus necesidades y pueden realizarse de forma presencial o virtual.",
+    "faq6": "¿Cómo puedo acceder a los manuales de los productos?",
+    "faq6des": "Los manuales de los productos están disponibles para su descarga en nuestro sitio web, en la sección de descargas. Si tiene dificultades para encontrar un manual específico, no dude en contactarnos para obtener asistencia.​",
+    "faq7": "¿Qué debo hacer si mi producto presenta una falla?",
+    "faq7des": "En caso de que un producto presente una falla, le recomendamos ponerse en contacto con nuestro equipo de soporte técnico para diagnosticar el problema y determinar la mejor solución, ya sea reparación o reemplazo."
   }
 }

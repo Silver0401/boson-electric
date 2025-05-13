@@ -72,7 +72,7 @@ export default async function Page({
       <div className={styles.rightContainer}>
         {/* {filteredProductData.features !== "NA" && ( */}
         <div className={styles.featursContainer}>
-          <h2>{"Especificaciones"}</h2>
+          <h2>{dict.footer["Especifications"]}</h2>
           {filteredProductData.numberOfDes ? (
             <>
               {Array(filteredProductData.numberOfDes)
