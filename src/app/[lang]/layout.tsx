@@ -74,6 +74,7 @@ export default async function RootLayout({
             title={dict.footer["BasketTitle"]}
             subtitle={dict.footer["BasketSubtitle"]}
             btn={dict.footer["BasketButton"]}
+            btn2={dict.footer["CotizarButton"]}
           />
         </GlobalContextProvider>
       </body>

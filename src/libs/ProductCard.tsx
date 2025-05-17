@@ -51,7 +51,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
               key={item.route2}
               className={styles.listItem}
               onClick={() => {
-                router.push(`/product/${route}/${item.route2}`);
+                router.push(`/${currentLang}/product/${route}/${item.route2}`);
               }}
             >
               <p>{item.title}</p>

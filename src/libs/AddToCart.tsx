@@ -6,9 +6,10 @@ import React, { useContext } from "react";
 interface AddToCartProps {
   item: productItemProps;
   classname: string;
+  btn: string;
 }
 
-const AddToCart: React.FC<AddToCartProps> = ({ item, classname }) => {
+const AddToCart: React.FC<AddToCartProps> = ({ item, classname, btn }) => {
   const { setBasketItems } = useContext(GlobalContext);
 
   return (
@@ -17,7 +18,7 @@ const AddToCart: React.FC<AddToCartProps> = ({ item, classname }) => {
       className={classname}
       onClick={() => setBasketItems((prevItems) => [...prevItems, item])}
     >
-      <p>{"Agregar al Carrito"}</p>
+      <p>{btn}</p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"

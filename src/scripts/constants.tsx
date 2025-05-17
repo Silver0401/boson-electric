@@ -15,6 +15,7 @@ import img1 from "@/assets/Products/1.png";
 import img2 from "@/assets/Products/2.png";
 import img3 from "@/assets/Products/3.png";
 import img5 from "@/assets/Products/5.png";
+import img6 from "@/assets/Products/6.png";
 import img7 from "@/assets/Products/7.png";
 import img8 from "@/assets/Products/8.png";
 import img9 from "@/assets/Products/9.png";
@@ -141,7 +142,7 @@ export const Products: productsIndexed = {
       },
       {
         title: "HV100",
-        mainImg: img5,
+        mainImg: img6,
         dimensionsImg: "",
         parametersImg: "",
         overview: ``,
@@ -2216,13 +2217,15 @@ export const Footers: footersIndexed = {
   },
   Productos: {
     list: [
-      { name: "PLC" },
-      { name: "HMI" },
-      { name: "CNCSystem" },
-      { name: "CNCMachine" },
-      { name: "Servo" },
+      { name: "SpeedVariators" },
       { name: "Robots" },
+      { name: "HMI" },
+      { name: "CNCMachine" },
+      { name: "PLC" },
+      { name: "CNCSystem" },
+      { name: "Servo" },
       { name: "Sensores" },
+      { name: "StopUnits" },
     ],
   },
   Soluciones: {

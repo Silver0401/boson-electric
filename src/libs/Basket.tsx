@@ -12,9 +12,10 @@ interface BasketProps {
   title: string;
   subtitle: string;
   btn: string;
+  btn2: string;
 }
 
-const Basket: React.FC<BasketProps> = ({ title, subtitle, btn }) => {
+const Basket: React.FC<BasketProps> = ({ title, subtitle, btn, btn2 }) => {
   const router = useRouter();
   const { basketItems, setBasketItems, basketState, setBasketState } =
     useContext(GlobalContext);
@@ -163,7 +164,7 @@ const Basket: React.FC<BasketProps> = ({ title, subtitle, btn }) => {
               );
             }}
           >
-            <p>{"Cotizar los Productos"}</p>
+            <p>{btn2}</p>
           </button>
         </div>
       ) : null}

@@ -12,6 +12,8 @@
     "EnterpriseDescription": "Descripción de la Empresa",
     "HMI": "HMI",
     "PLC": "PLC",
+    "SpeedVariators": "Variadores de Velocidad",
+    "StopUnits": "Unidades de Frenado",
     "CNCSystem": "Sistemas CNC",
     "CNCMachine": "Máquinas CNC",
     "Servo": "Servodrive & Servomotor",
@@ -43,7 +45,7 @@
         "d8": "Software de programación gratuito."
       },
       "HCG": {
-        "n": "HCG Standard PLC",
+        "n": "HCG Estándar PLC",
         "des": "",
         "d1": "Alimentación a 24V DC",
         "d2": "Protocolo de comunicación integrado.",
@@ -98,11 +100,11 @@
       "des": "",
       "HV10": {
         "n": "HV10",
-        "des": "",
+        "des": "La serie HV10 combina las características de un Variador de Velocidad compacto con funciones de alto desempeño, destacándose como un producto único y diferenciado por su alta estabilidad y excelente rendimiento de control.",
         "d1": "Protocolo de comunicación integrado: Modbus RTU RS485",
         "d2": "Modos de control: Protocolo de comunicación integrado: Modbus RTU RS485, V/F, V/F avanzado, V/F separable, Vectorial lazo abierto (SVC)",
         "d3": "Unidad de frenado incorporada: Hasta 18.5 kW en 220V, Hasta 22 kW en 440V",
-        "d4": "Implementación de macros para aplicaciones como: Suministro de Agua Multibombeo a Presión Constante, Bombeo solar con MPPT, Control de Motores Spindle en Maquinas Herramienta CNC, Control de Bombas / Motores en Sistemas de Control de Incendios (Fire Patrol), Control de VFD como Fuente de Alimentación de Emergencia (EPS), Definida por el usuario (personalizada)",
+        "d4": "Implementación de macros para aplicaciones como: Suministro de Agua Multibombeo a Presión Constante, Bombeo solar con MPPT, Control de Motores Spindle en Máquinas Herramienta CNC, Control de Bombas / Motores en Sistemas de Control de Incendios (Fire Patrol), Control de VFD como Fuente de Alimentación de Emergencia (EPS), Definida por el usuario (personalizada)",
         "d5": "Alto desempeño en hardware: Keydpad extraíble con puerto estandarizado, Keydpad con doble display",
         "d6": "Compatible con keypad LCD con función de copia de parámetros."
       },
@@ -112,7 +114,7 @@
         "d1": "Protocolo de comunicación integrado: Modbus RTU RS485",
         "d2": "Modos de control: V/F, V/F avanzado, V/F separable, Vectorial lazo abierto (SVC)",
         "d3": "Unidad de frenado incorporada: Hasta 18.5 kW en 220V, Hasta 22 kW en 440V",
-        "d4": "Implementación de macros para aplicaciones como: Suministro de Agua Multibombeo a Presión Constante, Bombeo solar con MPPT, Control de Motores Spindle en Maquinas Herramienta CNC, Control de Bombas / Motores en Sistemas de Control de Incendios (Fire Patrol), Control de VFD como Fuente de Alimentación de Emergencia (EPS), Definida por el usuario (personalizada)",
+        "d4": "Implementación de macros para aplicaciones como: Suministro de Agua Multibombeo a Presión Constante, Bombeo solar con MPPT, Control de Motores Spindle en Máquinas Herramienta CNC, Control de Bombas / Motores en Sistemas de Control de Incendios (Fire Patrol), Control de VFD como Fuente de Alimentación de Emergencia (EPS), Definida por el usuario (personalizada)",
         "d5": "Alto desempeño en hardware: Keydpad extraíble con puerto estandarizado, Keydpad con doble display",
         "d6": "Compatible con keypad LCD con función de copia de parámetros."
       },
@@ -121,7 +123,7 @@
         "des": "",
         "d1": "Protocolo de comunicación integrado: Modbus RTU RS485",
         "d2": "Modos de control: V/F, V/F avanzado, V/F separable, Vectorial lazo abierto (SVC)",
-        "d3": "Implementación de macros para aplicaciones como: Suministro de Agua Multibombeo a Presión Constante, Bombeo solar con MPPT, Control de Motores Spindle en Maquinas Herramienta CNC, Control de Bombas / Motores en Sistemas de Control de Incendios (Fire Patrol), Control de VFD como Fuente de Alimentación de Emergencia (EPS), Definida por el usuario (personalizada)"
+        "d3": "Implementación de macros para aplicaciones como: Suministro de Agua Multibombeo a Presión Constante, Bombeo solar con MPPT, Control de Motores Spindle en Máquinas Herramienta CNC, Control de Bombas / Motores en Sistemas de Control de Incendios (Fire Patrol), Control de VFD como Fuente de Alimentación de Emergencia (EPS), Definida por el usuario (personalizada)"
       },
       "HV480": {
         "n": "HV480",
@@ -683,7 +685,7 @@
       }
     },
     "CNCMachine": {
-      "n": "Maquinas CNC",
+      "n": "Máquinas CNC",
       "des": "",
       "CentrodeMecanizado": {
         "n": "Centro de Mecanizado ",
@@ -722,7 +724,7 @@
         "d7": "Con grados de protección: IEC IP67, IEC IP66"
       },
       "Fotoelectricos": {
-        "n": "Sensores Fotoelectricos",
+        "n": "Sensores Fotoeléctricos",
         "des": "Los sensores fotoeléctricos son dispositivos de alta precisión diseñados para detectar la presencia, ausencia o cambios en la posición de objetos a través de la interrupción de un haz de luz y de accesorios reflejantes. Nuestros sensores fotoeléctricos ofrecen una solución confiable y versátil para diversas aplicaciones industriales, donde la detección precisa es clave para garantizar la eficiencia y seguridad de los procesos automatizados.",
         "d1": "Tipo: Reflexión difusa, Retro-reflectivo, De haz pasante, Fibra Óptica",
         "d2": "Forma: Cilíndrico, Rectangular, En forma U",
@@ -750,6 +752,8 @@
     "BasketTitle": "Mi Carrito",
     "BasketSubtitle": "Tu carrito esta vacío. Agrégale productos",
     "BasketButton": "Ver Productos",
+    "CotizarButton": "Cotizar los Productos",
+    "AddToCartButton": "Añadir al Carrito",
     "Acerca": "Acerca de Boson",
     "Productos": "Productos",
     "Soluciones": "Soluciones",

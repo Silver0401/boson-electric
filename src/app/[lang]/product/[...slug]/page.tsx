@@ -54,6 +54,7 @@ export default async function Page({
           <AddToCart
             classname={styles.IndividualProducButton}
             item={filteredProductData}
+            btn={dict.footer.AddToCartButton}
           />
         </div>
         <div className={styles.imgContainer}>
