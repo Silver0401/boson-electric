@@ -40,7 +40,7 @@ export default async function RootLayout({
   if (process.env.NEXT_PUBLIC_PAGE_DISABLED === "true") {
     return (
       <html lang={lang}>
-        <body>{"503 - Service Unavailable"}</body>
+        <body>{"503 - Service Unavailable."}</body>
       </html>
     );
   } else {
