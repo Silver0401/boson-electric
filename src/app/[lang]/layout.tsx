@@ -37,47 +37,55 @@ export default async function RootLayout({
   const { lang } = await params;
   const dict = await getDictionary(lang);
 
-  return (
-    <html lang={(await params).lang}>
-      <body>
-        <GlobalContextProvider>
-          <Nav lang={(await params).lang} />
-          {children}
-          <div className={styles.FooterSection}>
-            {Object.entries(Footers).map((footerSection) => {
-              const [key, value] = footerSection;
+  if (process.env.NEXT_PUBLIC_PAGE_DISABLED === "true") {
+    return (
+      <html lang={lang}>
+        <body>{"503 - Service Unavailable"}</body>
+      </html>
+    );
+  } else {
+    return (
+      <html lang={(await params).lang}>
+        <body>
+          <GlobalContextProvider>
+            <Nav lang={(await params).lang} />
+            {children}
+            <div className={styles.FooterSection}>
+              {Object.entries(Footers).map((footerSection) => {
+                const [key, value] = footerSection;
 
-              return (
-                <div key={key} className={styles.column}>
-                  {/* @ts-expect-error because ts is dumb */}
-                  <h4>{dict.footer[key]}</h4>
-                  {value.list.map((value) => {
-                    return (
-                      <Link
-                        key={`${key} ${value.name}`}
-                        href={
-                          value.route
-                            ? `/${lang}/${value.route}`
-                            : `/${lang}/generic/${value.name}`
-                        }
-                      >
-                        {/* @ts-expect-error ts doesnt check the keys with the dictionary */}
-                        <p>{`${dict.main[value.name]}`}</p>
-                      </Link>
-                    );
-                  })}
-                </div>
-              );
-            })}
-          </div>
-          <Basket
-            title={dict.footer["BasketTitle"]}
-            subtitle={dict.footer["BasketSubtitle"]}
-            btn={dict.footer["BasketButton"]}
-            btn2={dict.footer["CotizarButton"]}
-          />
-        </GlobalContextProvider>
-      </body>
-    </html>
-  );
+                return (
+                  <div key={key} className={styles.column}>
+                    {/* @ts-expect-error because ts is dumb */}
+                    <h4>{dict.footer[key]}</h4>
+                    {value.list.map((value) => {
+                      return (
+                        <Link
+                          key={`${key} ${value.name}`}
+                          href={
+                            value.route
+                              ? `/${lang}/${value.route}`
+                              : `/${lang}/generic/${value.name}`
+                          }
+                        >
+                          {/* @ts-expect-error ts doesnt check the keys with the dictionary */}
+                          <p>{`${dict.main[value.name]}`}</p>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+            </div>
+            <Basket
+              title={dict.footer["BasketTitle"]}
+              subtitle={dict.footer["BasketSubtitle"]}
+              btn={dict.footer["BasketButton"]}
+              btn2={dict.footer["CotizarButton"]}
+            />
+          </GlobalContextProvider>
+        </body>
+      </html>
+    );
+  }
 }

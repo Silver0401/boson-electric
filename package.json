@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "dev-kill": "env-cmd -f ./.env.dev next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -24,6 +25,9 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "concurrently": "^9.1.2",
+    "dotenv": "^16.5.0",
+    "env-cmd": "^10.1.0",
     "eslint": "^9",
     "eslint-config-next": "15.2.1",
     "next-translate-plugin": "^2.6.2",
