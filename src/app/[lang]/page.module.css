@@ -255,7 +255,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 170px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
@@ -263,6 +263,7 @@
 .HomeSection .SolutionsCenter h2 {
   position: absolute;
   top: 0px;
+  margin-top: 90px;
 }
 
 .HomeSection .SolutionsCenter .Box {
@@ -412,12 +413,11 @@
 @media (max-width: 800px) {
   .HomeSection .SolutionsCenter {
     height: auto;
-    padding-top: 80px;
     overflow: hidden;
   }
-  .HomeSection .SolutionsCenter h2 {
+  /* .HomeSection .SolutionsCenter h2 {
     margin: 20px;
-  }
+  } */
 
   .HomeSection .InitContainer {
     flex-direction: column;
