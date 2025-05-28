@@ -8,6 +8,7 @@ export declare global {
     | "HMI"
     | "CNCSystem"
     | "SpeedVariators"
+    | "PowerSources"
     | "StopUnits"
     | "CNCMachine"
     | "Robots"

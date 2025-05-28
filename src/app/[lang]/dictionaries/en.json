@@ -96,16 +96,15 @@
     },
     "SpeedVariators": {
       "n": "Speed Controllers",
-      "des": "",
+      "des": "HNC Electric frequency inverters offer versatile and high-performance solutions for a wide range of industrial applications. With designs ranging from open-loop to closed-loop systems, and capabilities from 0.5 to 1090 HP, these inverters are ideal for sectors such as pumping, ventilation, cranes, and CNC machines. Their advanced technology ensures precise and efficient motor speed control, optimizing energy consumption and improving productivity.",
       "HV10": {
         "n": "HV10",
-        "des": "The HV10 series combines the features of a compact Variable Speed Drive with high-performance functions, standing out as a unique and differentiated product due to its high stability and excellent control performance.",
+        "des": "The HV10 series combines the features of a compact Variable Speed Drive with high-performance functions, standing out as a unique product due to its high stability and excellent control performance.",
         "d1": "Integrated communication protocol: Modbus RTU RS485",
-        "d2": "Control modes: Integrated communication protocol: Modbus RTU RS485, V/F, Advanced V/F, Separable V/F, Open-loop Vector (SVC)",
-        "d3": "Built-in braking unit: Up to 18.5 kW at 220V, Up to 22 kW at 440V",
-        "d4": "Macro implementation for applications such as: Constant Pressure Multi-pump Water Supply, Solar Pumping with MPPT, Spindle Motor Control in CNC Machine Tools, Pump/Motor Control in Fire Control Systems (Fire Patrol), VFD Control as Emergency Power Supply (EPS), User-defined (customized)",
-        "d5": "High-performance hardware: Removable keypad with standardized port, Keypad with dual display",
-        "d6": "Compatible with LCD keypad with parameter copy function."
+        "d2": "Control modes: V/F, Advanced V/F, Separable V/F, Open-loop Vector (SVC)",
+        "d3": "Built-in braking unit in all models",
+        "d4": "Macro implementation for applications such as: Constant pressure water supply, Spindle motor control in CNC machine tools, and User-defined (customized)",
+        "d5": "Available power supply and ratings (Voltage and Power): Single-phase AC 120V / 0.4kW~2.2kW, Single-phase AC 220V / 0.4kW~2.2kW, Three-phase AC 220V / 0.75kW~4kW, Three-phase AC 380~440V / 0.75kW~5.5kW, Three-phase AC 460~480V / 0.75kW~5.5kW"
       },
       "HV100": {
         "n": "HV100",
@@ -122,7 +121,8 @@
         "des": "",
         "d1": "Integrated communication protocol: Modbus RTU RS485",
         "d2": "Control modes: V/F, Advanced V/F, Separable V/F, Open-loop Vector (SVC)",
-        "d3": "Macro implementation for applications such as: Constant Pressure Multi-pump Water Supply, Solar Pumping with MPPT, Spindle Motor Control in CNC Machine Tools, Pump/Motor Control in Fire Control Systems (Fire Patrol), VFD Control as Emergency Power Supply (EPS), User-defined (customized)"
+        "d3": "Stop Unit incorporated: Up to 18.5 kw in 220, Up to 22 kw in 440V",
+        "d4": "Macro implementation for applications such as: Constant Pressure Multi-pump Water Supply, Solar Pumping with MPPT, Spindle Motor Control in CNC Machine Tools, Pump/Motor Control in Fire Control Systems (Fire Patrol), VFD Control as Emergency Power Supply (EPS), User-defined (customized)"
       },
       "HV480": {
         "n": "HV480",
@@ -210,7 +210,7 @@
     },
     "StopUnits": {
       "n": "Braking Units",
-      "des": "",
+      "des": "HNC Electric braking units are designed to enhance the performance and safety of frequency inverters across various brands. These units optimize braking performance, reduce deceleration time, and provide comprehensive protection against potential risks such as overcurrent, overheating, and internal short circuits, ensuring efficient and safe operation in industrial applications.",
       "HBU": {
         "n": "HBU",
         "des": "",
@@ -218,9 +218,58 @@
         "d2": "Available for inverters from 0.75kw to 630kw"
       }
     },
+    "PowerSources": {
+      "n": "Power Supply",
+      "des": "Our power supplies are essential devices designed to efficiently and reliably convert and deliver electrical energy to electronic equipment and systems. Ideal for industrial, commercial, and laboratory applications, these power supplies ensure a stable supply of voltage and current, protecting your equipment against fluctuations and overloads.",
+      "HPR60W": {
+        "n": "HPR/60W",
+        "des": "HPR 60W Model",
+        "d1": "Output voltage: 24V DC",
+        "d2": "Rated current: From 1.5 A to 10 A",
+        "d3": "Output voltage tolerance: ±1%",
+        "d4": "Ripple voltage: 80 mVp-p to 150 mVp-p",
+        "d5": "Efficiency from 80% to 84%",
+        "d6": "Input voltage: 100 VAC to 240 VAC",
+        "d7": "Leakage current: <15 A to <27 A / 100 VAC, <30 A to <45 A / 240 VAC"
+      },
+      "HPR75W": {
+        "n": "HPR/75W",
+        "des": "HPR 75W Model",
+        "d1": "Output voltage: 24V DC",
+        "d2": "Rated current: From 1.5 A to 10 A",
+        "d3": "Output voltage tolerance: ±1%",
+        "d4": "Ripple voltage: 80 mVp-p to 150 mVp-p",
+        "d5": "Efficiency from 80% to 84%",
+        "d6": "Input voltage: 100 VAC to 240 VAC",
+        "d7": "Leakage current: <15 A to <27 A / 100 VAC, <30 A to <45 A / 240 VAC"
+      },
+      "HPR120W": {
+        "n": "HPR/120W",
+        "des": "HPR 120W Model",
+        "d1": "Output voltage: 24V DC",
+        "d2": "Rated current: From 1.5 A to 10 A",
+        "d3": "Output voltage tolerance: ±1%",
+        "d4": "Ripple voltage: 80 mVp-p to 150 mVp-p",
+        "d5": "Efficiency from 80% to 84%",
+        "d6": "Input voltage: 100 VAC to 240 VAC",
+        "d7": "Leakage current: <15 A to <27 A / 100 VAC, <30 A to <45 A / 240 VAC"
+      },
+      "HPR240W": {
+        "n": "HPR/240W",
+        "des": "HPR 240W Model",
+        "d1": "Output voltage: 24V DC",
+        "d2": "Rated current: From 1.5 A to 10 A",
+        "d3": "Output voltage tolerance: ±1%",
+        "d4": "Ripple voltage: 80 mVp-p to 150 mVp-p",
+        "d5": "Efficiency from 80% to 84%",
+        "d6": "Input voltage: 100 VAC to 240 VAC",
+        "d7": "Leakage current: <15 A to <27 A / 100 VAC, <30 A to <45 A / 240 VAC"
+      }
+    },
     "Servo": {
       "n": "Servodrive & Servomotor",
-      "des": "",
+      "des": "HNC Electric servodrives and servomotors are designed to deliver efficient, reliable, and adaptable performance in industrial automation environments. Manufactured with high-quality magnetic materials and engineered to maintain a fast response even under prolonged working conditions, these systems ensure precise motion control. Their compatibility with different voltages and capacities, along with the possibility of customized configurations, makes them a versatile solution for various industries and applications.",
+
       "SVE3": {
         "n": "SV-E3 + SE",
         "des": "The SV-E3 series stands out for its simplified and functional design, compact size, high performance, and simple and highly reliable operation.",
@@ -550,7 +599,8 @@
     },
     "CNCSystem": {
       "n": "CNC Systems",
-      "des": "",
+      "des": "HNC Electric CNC systems feature advanced open architecture with integrated industrial computers, versatile interfaces for feed axes and spindles, and built-in PLCs. These systems offer high-capacity storage and program extension and transfer functions via USB, DNC, and Ethernet, providing comprehensive solutions for various CNC machines and supporting secondary development.",
+
       "808": {
         "n": "808",
         "des": "CNC Controller",
@@ -685,7 +735,8 @@
     },
     "CNCMachine": {
       "n": "CNC Machines",
-      "des": "",
+      "des": "HNC Electric provides complete solutions for CNC machines, integrating advanced controllers, servomotors, and frequency inverters. These solutions are designed for milling, turning, and other high-precision machining operations, offering efficient and reliable automation that improves quality and productivity in industrial processes.",
+
       "CentrodeMecanizado": {
         "n": "Machining Center",
         "des": "Our CNC machining centers deliver excellent performance, combining stability, precision, processing efficiency, advanced CNC control technology, and refined manufacturing processes. Based on high-quality products and a strong technical support team, we are committed to providing all customers with the best and most cost-effective CNC machining solutions. Our CNC machining centers are widely used in metal processing and manufacturing in the automotive, mechanical engineering, medical, and other fields.",
@@ -699,7 +750,8 @@
     },
     "Sensores": {
       "n": "Sensors",
-      "des": "",
+      "des": "The new HNC Electric sensor series includes rotary encoders, proximity sensors, photoelectric sensors, and area sensors. Designed with high quality, excellent electromagnetic compatibility (EMC) features, long service life, and high precision, these sensors are developed from the customer's needs perspective, providing reliable solutions for various industrial applications.",
+
       "Encoders": {
         "n": "Encoders",
         "des": "Our encoders are designed to provide precise and reliable solutions for measuring position, speed, and direction in industrial and automated applications. With robust construction and advanced technology, these devices are ideal for demanding environments where precision and durability are essential.",

@@ -63,6 +63,11 @@ import img61 from "@/assets/Products/61.png";
 import img62 from "@/assets/Products/62.png";
 import img65 from "@/assets/Products/65.png";
 
+import img70 from "@/assets/Products/70.png";
+import img71 from "@/assets/Products/71.png";
+import img72 from "@/assets/Products/72.png";
+import img73 from "@/assets/Products/73.png";
+
 // Solutions
 import print1 from "@/assets/Solutions/print1.jpg";
 import print2 from "@/assets/Solutions/print2.jpg";
@@ -138,7 +143,7 @@ export const Products: productsIndexed = {
         parametersImg: "",
         overview: ``,
         features: ``,
-        numberOfDes: 6,
+        numberOfDes: 5,
       },
       {
         title: "HV100",
@@ -156,7 +161,7 @@ export const Products: productsIndexed = {
         parametersImg: "",
         overview: ``,
         features: ``,
-        numberOfDes: 3,
+        numberOfDes: 4,
       },
       {
         title: "HV480",
@@ -353,6 +358,63 @@ export const Products: productsIndexed = {
         overview: ``,
         features: ``,
         numberOfDes: 9,
+      },
+    ],
+  },
+  PowerSources: {
+    icon: (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        className="size-6"
+      >
+        <path
+          fillRule="evenodd"
+          d="M14.615 1.595a.75.75 0 0 1 .359.852L12.982 9.75h7.268a.75.75 0 0 1 .548 1.262l-10.5 11.25a.75.75 0 0 1-1.272-.71l1.992-7.302H3.75a.75.75 0 0 1-.548-1.262l10.5-11.25a.75.75 0 0 1 .913-.143Z"
+          clipRule="evenodd"
+        />
+      </svg>
+    ),
+    route: "/section/products",
+    description:
+      "Nuestras fuentes de alimentación son dispositivos esenciales diseñados para convertir y suministrar energía eléctrica de manera eficiente y confiable a equipos y sistemas electrónicos. Ideales para aplicaciones industriales, comerciales y de laboratorio, estas fuentes de alimentación garantizan un suministro estable de voltaje y corriente, protegiendo sus equipos contra fluctuaciones y sobrecargas.",
+    itemsList: [
+      {
+        title: "HPR60W",
+        mainImg: img70,
+        dimensionsImg: "",
+        parametersImg: "",
+        overview: ``,
+        features: ``,
+        numberOfDes: 7,
+      },
+      {
+        title: "HPR75W",
+        mainImg: img71,
+        dimensionsImg: "",
+        parametersImg: "",
+        overview: ``,
+        features: ``,
+        numberOfDes: 7,
+      },
+      {
+        title: "HPR120W",
+        mainImg: img72,
+        dimensionsImg: "",
+        parametersImg: "",
+        overview: ``,
+        features: ``,
+        numberOfDes: 7,
+      },
+      {
+        title: "HPR240W",
+        mainImg: img73,
+        dimensionsImg: "",
+        parametersImg: "",
+        overview: ``,
+        features: ``,
+        numberOfDes: 7,
       },
     ],
   },

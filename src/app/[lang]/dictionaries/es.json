@@ -97,16 +97,15 @@
     },
     "SpeedVariators": {
       "n": "Variadores de Velocidad",
-      "des": "",
+      "des": "Los variadores de frecuencia de HNC Electric ofrecen soluciones versátiles y de alto rendimiento para una amplia gama de aplicaciones industriales. Con diseños que abarcan desde sistemas de lazo abierto hasta lazo cerrado, y capacidades que van desde 0.5 hasta 1090 HP, estos inversores son ideales para sectores como bombeo, ventilación, grúas y máquinas CNC. Su tecnología avanzada garantiza un control preciso y eficiente de la velocidad del motor, optimizando el consumo energético y mejorando la productividad.",
       "HV10": {
         "n": "HV10",
         "des": "La serie HV10 combina las características de un Variador de Velocidad compacto con funciones de alto desempeño, destacándose como un producto único y diferenciado por su alta estabilidad y excelente rendimiento de control.",
         "d1": "Protocolo de comunicación integrado: Modbus RTU RS485",
-        "d2": "Modos de control: Protocolo de comunicación integrado: Modbus RTU RS485, V/F, V/F avanzado, V/F separable, Vectorial lazo abierto (SVC)",
-        "d3": "Unidad de frenado incorporada: Hasta 18.5 kW en 220V, Hasta 22 kW en 440V",
-        "d4": "Implementación de macros para aplicaciones como: Suministro de Agua Multibombeo a Presión Constante, Bombeo solar con MPPT, Control de Motores Spindle en Máquinas Herramienta CNC, Control de Bombas / Motores en Sistemas de Control de Incendios (Fire Patrol), Control de VFD como Fuente de Alimentación de Emergencia (EPS), Definida por el usuario (personalizada)",
-        "d5": "Alto desempeño en hardware: Keydpad extraíble con puerto estandarizado, Keydpad con doble display",
-        "d6": "Compatible con keypad LCD con función de copia de parámetros."
+        "d2": "Modos de control: V/F, V/F avanzado, V/F separable, Vectorial lazo abierto (SVC)",
+        "d3": "Unidad de frenado incorporada en todos los modelos",
+        "d4": "Implementación de macros para aplicaciones como: Suministro de agua a presión constante, Control de motores spindle en máquinas herramientas CNC y Definida por el usuario (personalizada)",
+        "d5": "Alimentación y potencias disponibles (Voltaje y Potencia): Monofásica CA 120V / 0.4kW~2.2kW, Monofásica CA 220V / 0.4kW~2.2kW, Trifásica CA 220V / 0.75kW~4kW, Trifásica CA 380~440V / 0.75kW~5.5kW, Trifásica CA 460~480V / 0.75kW~5.5kW"
       },
       "HV100": {
         "n": "HV100",
@@ -123,7 +122,8 @@
         "des": "",
         "d1": "Protocolo de comunicación integrado: Modbus RTU RS485",
         "d2": "Modos de control: V/F, V/F avanzado, V/F separable, Vectorial lazo abierto (SVC)",
-        "d3": "Implementación de macros para aplicaciones como: Suministro de Agua Multibombeo a Presión Constante, Bombeo solar con MPPT, Control de Motores Spindle en Máquinas Herramienta CNC, Control de Bombas / Motores en Sistemas de Control de Incendios (Fire Patrol), Control de VFD como Fuente de Alimentación de Emergencia (EPS), Definida por el usuario (personalizada)"
+        "d3": "Unidad de frenado incorporada: Hasta 18.5 kW en 220, Hasta 22 kW en 440V",
+        "d4": "Implementación de macros para aplicaciones como: Suministro de Agua Multibombeo a Presión Constante, Bombeo solar con MPPT, Control de Motores Spindle en Máquinas Herramienta CNC, Control de Bombas / Motores en Sistemas de Control de Incendios (Fire Patrol), Control de VFD como Fuente de Alimentación de Emergencia (EPS), Definida por el usuario (personalizada)"
       },
       "HV480": {
         "n": "HV480",
@@ -211,7 +211,7 @@
     },
     "StopUnits": {
       "n": "Unidades de Frenado",
-      "des": "",
+      "des": "Las unidades de frenado de HNC Electric están diseñadas para mejorar el rendimiento y la seguridad de los inversores de frecuencia en diversas marcas. Estas unidades optimizan el rendimiento de frenado, reducen el tiempo de desaceleración y proporcionan una protección integral contra posibles riesgos como sobrecorriente, sobrecalentamiento y cortocircuitos internos, asegurando un funcionamiento eficiente y seguro en aplicaciones industriales. ",
       "HBU": {
         "n": "HBU",
         "des": "",
@@ -219,9 +219,57 @@
         "d2": "Disponible para inversores desde 0.75kw hasta 630kw"
       }
     },
+    "PowerSources": {
+      "n": "Fuente de poder",
+      "des": "Nuestras fuentes de alimentación son dispositivos esenciales diseñados para convertir y suministrar energía eléctrica de manera eficiente y confiable a equipos y sistemas electrónicos. Ideales para aplicaciones industriales, comerciales y de laboratorio, estas fuentes de alimentación garantizan un suministro estable de voltaje y corriente, protegiendo sus equipos contra fluctuaciones y sobrecargas.",
+      "HPR60W": {
+        "n": "HPR/60W",
+        "des": "Modelo HPR de 60W",
+        "d1": "Voltaje de salida: 24V CD",
+        "d2": "Corriente nominal: Desde 1.5 A hasta 10 A",
+        "d3": "Tolerancia de voltaje de salida: ±1%",
+        "d4": "Voltaje de rizado: 80 mVp-p a 150 mVp-p",
+        "d5": "Eficiencia del 80% al 84%",
+        "d6": "Voltaje de entrada: 100 VCA a 240 VCA",
+        "d7": "Corriente de fuga: <15 A a <27 A / 100 V CA, <30 A a <45 A / 240 V CA"
+      },
+      "HPR75W": {
+        "n": "HPR/75W",
+        "des": "Modelo HPR de 75W",
+        "d1": "Voltaje de salida: 24V CD",
+        "d2": "Corriente nominal: Desde 1.5 A hasta 10 A",
+        "d3": "Tolerancia de voltaje de salida: ±1%",
+        "d4": "Voltaje de rizado: 80 mVp-p a 150 mVp-p",
+        "d5": "Eficiencia del 80% al 84%",
+        "d6": "Voltaje de entrada: 100 VCA a 240 VCA",
+        "d7": "Corriente de fuga: <15 A a <27 A / 100 V CA, <30 A a <45 A / 240 V CA"
+      },
+      "HPR120W": {
+        "n": "HPR/120W",
+        "des": "Modelo HPR de 120W",
+        "d1": "Voltaje de salida: 24V CD",
+        "d2": "Corriente nominal: Desde 1.5 A hasta 10 A",
+        "d3": "Tolerancia de voltaje de salida: ±1%",
+        "d4": "Voltaje de rizado: 80 mVp-p a 150 mVp-p",
+        "d5": "Eficiencia del 80% al 84%",
+        "d6": "Voltaje de entrada: 100 VCA a 240 VCA",
+        "d7": "Corriente de fuga: <15 A a <27 A / 100 V CA, <30 A a <45 A / 240 V CA"
+      },
+      "HPR240W": {
+        "n": "HPR/240W",
+        "des": "Modelo HPR de 240W",
+        "d1": "Voltaje de salida: 24V CD",
+        "d2": "Corriente nominal: Desde 1.5 A hasta 10 A",
+        "d3": "Tolerancia de voltaje de salida: ±1%",
+        "d4": "Voltaje de rizado: 80 mVp-p a 150 mVp-p",
+        "d5": "Eficiencia del 80% al 84%",
+        "d6": "Voltaje de entrada: 100 VCA a 240 VCA",
+        "d7": "Corriente de fuga: <15 A a <27 A / 100 V CA, <30 A a <45 A / 240 V CA"
+      }
+    },
     "Servo": {
       "n": "Servodrive & Servomotor",
-      "des": "",
+      "des": "Los servodrives y servomotores de HNC Electric están diseñados para ofrecer un rendimiento eficiente, confiable y adaptable en entornos de automatización industrial. Fabricados con materiales magnéticos de alta calidad y diseñados para mantener una respuesta rápida incluso en condiciones de trabajo prolongadas, estos sistemas garantizan un control preciso del movimiento. Su compatibilidad con distintas tensiones y capacidades, junto con la posibilidad de configuraciones personalizadas, los convierte en una solución versátil para diversas industrias y aplicaciones.",
       "SVE3": {
         "n": "SV-E3 + SE",
         "des": "La serie SV-E3 se distingue por su diseño simplificado y funcional, tamaño compacto, alto rendimiento y una operación sencilla y de alta confiabilidad.",
@@ -551,7 +599,7 @@
     },
     "CNCSystem": {
       "n": "Sistemas CNC",
-      "des": "",
+      "des": "Los sistemas CNC de HNC Electric incorporan una arquitectura abierta avanzada con computadoras industriales integradas, interfaces versátiles para ejes de alimentación y husillos, y PLCs incorporados. Estos sistemas ofrecen almacenamiento de alta capacidad y funciones de extensión y transferencia de programas a través de USB, DNC y Ethernet, proporcionando soluciones completas para diversas máquinas CNC y soportando el desarrollo secundario.",
       "808": {
         "n": "808",
         "des": "",
@@ -686,7 +734,7 @@
     },
     "CNCMachine": {
       "n": "Máquinas CNC",
-      "des": "",
+      "des": "HNC Electric proporciona soluciones completas para máquinas CNC, integrando controladores avanzados, servomotores y variadores de frecuencia. Estas soluciones están diseñadas para aplicaciones de fresado, torneado y otras operaciones de mecanizado de alta precisión, ofreciendo una automatización eficiente y confiable que mejora la calidad y la productividad en los procesos industriales.",
       "CentrodeMecanizado": {
         "n": "Centro de Mecanizado ",
         "des": "Nuestros centros de mecanizado CNC tienen un excelente rendimiento de trabajo, combinando estabilidad, precisión, eficiencia de procesamiento, tecnología de control CNC avanzada y un proceso de fabricación refinado. Basados en productos de alta calidad y un sólido equipo de soporte técnico, estamos comprometidos en brindarles a todos los clientes las mejores y más rentables soluciones de mecanizado CNC. Nuestros centros de mecanizado CNC se utilizan ampliamente en el procesamiento y fabricación de metales en los campos automotriz, de ingeniería mecánica, médico y otros.",
@@ -700,7 +748,7 @@
     },
     "Sensores": {
       "n": "Sensores",
-      "des": "",
+      "des": "La nueva serie de sensores de HNC Electric incluye encoders rotativos, sensores de proximidad, sensores fotoeléctricos y sensores de área. Diseñados con alta calidad, excelentes características de compatibilidad electromagnética (EMC), diseño de larga vida útil y alta precisión, estos sensores están desarrollados desde la perspectiva de las necesidades del cliente, proporcionando soluciones confiables para diversas aplicaciones industriales. ",
       "Encoders": {
         "n": "Encoders",
         "des": "Nuestros encoders están diseñados para proporcionar soluciones precisas y confiables en la medición de posición, velocidad y dirección en aplicaciones industriales y automátizadas. Con una construcción robusta y tecnología avanzada, estos dispositivos son ideales para entornos exigentes donde la precisión y la durabilidad son esenciales.",
