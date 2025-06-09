@@ -23,6 +23,7 @@ const Nav: React.FC<NavProps> = ({ lang }) => {
     Productos: "Products",
     Soluciones: "Solutions",
     "Acerca de Boson": "About Boson",
+    Contáctanos: "Contact Us",
   };
 
   const changeLanguage = () => {

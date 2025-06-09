@@ -471,7 +471,7 @@ button svg {
 }
 
 .Nav ul {
-  width: 40%;
+  width: 50%;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -637,6 +637,10 @@ button svg {
   place-items: center;
   font-weight: bolder;
   font-size: 0.9rem;
+}
+
+.Nav .NavItem:hover a {
+  color: #4698b3;
 }
 
 .Nav .logoContainer {

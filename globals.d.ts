@@ -81,7 +81,7 @@ export declare global {
 
   //  ---------------------------- Nav Types --------------------------------
 
-  type Navs = "Productos" | "Soluciones" | "Acerca de Boson";
+  type Navs = "Productos" | "Soluciones" | "Acerca de Boson" | "Contáctanos";
   // | "Contactos"
   // | "Ubicacion";
 

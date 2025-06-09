@@ -17,9 +17,6 @@ export default async function AboutPage({
 
       <h3>{dict.footer.MV}</h3>
       <p>{dict.footer.MVdes}</p>
-
-      <h3>{dict.footer.WTF}</h3>
-      <GMaps />
     </div>
   );
 }

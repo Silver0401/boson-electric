@@ -2311,6 +2311,6 @@ export const Navs: NavsIndexed = {
   Productos: { route: "/section/products" },
   Soluciones: { route: "/section/solutions" },
   "Acerca de Boson": { route: "/about" },
-  // Contactos: { route: "/contact" },
+  Contáctanos: { route: "/contact" },
   // Ubicacion: { route: "/location" },
 };

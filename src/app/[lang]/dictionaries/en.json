@@ -799,6 +799,8 @@
     }
   },
   "footer": {
+    "buttonSendMail": "Send Mail",
+    "buttonSendWhatsapp": "Send Whatsapp",
     "Especifications": "Specifications",
     "BasketTitle": "My Basket",
     "BasketSubtitle": "Your Basket is empty. Add some products",

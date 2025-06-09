@@ -796,6 +796,8 @@
     }
   },
   "footer": {
+    "buttonSendMail": "Mandar Correo",
+    "buttonSendWhatsapp": "Mandar Whatsapp",
     "Especifications": "Especificaciones",
     "BasketTitle": "Mi Carrito",
     "BasketSubtitle": "Tu carrito esta vacío. Agrégale productos",

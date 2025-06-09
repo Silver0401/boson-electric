@@ -1,0 +1,23 @@
+.Body {
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(5px, 1vw, 50px);
+}
+
+.ContainerContainer {
+  position: relative;
+  max-width: 500px;
+  flex: 1 1 400px;
+  height: 400px;
+  border-radius: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
