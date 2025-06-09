@@ -1,6 +1,5 @@
 import { getDictionary } from "../dictionaries";
 import styles from "./page.module.css";
-import GMaps from "@/libs/GoogleMaps";
 import CButton from "@/components/CButton";
 
 export default async function ContactPage({

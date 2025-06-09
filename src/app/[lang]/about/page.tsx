@@ -1,6 +1,5 @@
 import { getDictionary } from "../dictionaries";
 import styles from "./page.module.css";
-import GMaps from "@/libs/GoogleMaps";
 
 export default async function AboutPage({
   params,
