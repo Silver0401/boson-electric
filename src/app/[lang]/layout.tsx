@@ -37,7 +37,8 @@ export default async function RootLayout({
   } else {
     return (
       <html lang={(await params).lang}>
-        <Head>
+        <head>
+          <link rel="icon" href="/favicon.ico" sizes="any" />
           <script
             dangerouslySetInnerHTML={{
               __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -47,8 +48,16 @@ export default async function RootLayout({
                 })(window,document,'script','dataLayer','GTM-K37CKDQ3');`,
             }}
           ></script>
-        </Head>
+        </head>
         <body>
+          <noscript>
+            <iframe
+              src="https://www.googletagmanager.com/ns.html?id=GTM-K37CKDQ3"
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            />
+          </noscript>
           <GlobalContextProvider>
             <Nav lang={(await params).lang} />
             {children}
@@ -86,13 +95,6 @@ export default async function RootLayout({
               btn2={dict.footer["CotizarButton"]}
             />
           </GlobalContextProvider>
-
-          <iframe
-            style={{ display: "none", visibility: "hidden" }}
-            src="https://www.googletagmanager.com/ns.html?id=GTM-K37CKDQ3"
-            height="0"
-            width="0"
-          />
         </body>
       </html>
     );
