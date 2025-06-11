@@ -7,7 +7,6 @@ import { GlobalContextProvider } from "@/e2e/globalContext";
 import Basket from "@/libs/Basket";
 import Nav from "@/libs/Nav";
 import { getDictionary } from "./dictionaries";
-import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Boson",
